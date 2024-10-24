@@ -11,7 +11,7 @@ redirect_from:
 
 # Education
 
-- B.Eng. in Vehicle Engineering, Tsinghua University, 2023-Present
+- Undergraduate, Vehicle Engineering, Tsinghua University, 2023-Present
 
 # Professional Activities
 
