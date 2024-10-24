@@ -30,10 +30,6 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-<!-- - Fall 2024: Exploration to Scientific Research of Lab, Tsinghua University
-
-- Fall 2024: Projects Design: Humanoid Soccer Robot, Tsinghua University -->
-
 # Skills
 
 - Machine Learning
@@ -56,8 +52,11 @@ redirect_from:
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
 
-# Teaching
-
 # Service and leadership
 
-- Currently signed in to 43 different slack teams -->
+- Currently signed in to 43 different slack teams
+
+# Teaching
+
+- Fall 2024: Exploration to Scientific Research of Lab, Tsinghua University
+- Fall 2024: Projects Design: Humanoid Soccer Robot, Tsinghua University -->
