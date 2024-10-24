@@ -26,9 +26,13 @@ redirect_from:
 
 ## Teaching Assistant
 
-- Fall 2024: Exploration to Scientific Research of Lab, Tsinghua University
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
-- Fall 2024: Projects Design: Humanoid Soccer Robot, Tsinghua University
+<!-- - Fall 2024: Exploration to Scientific Research of Lab, Tsinghua University
+
+- Fall 2024: Projects Design: Humanoid Soccer Robot, Tsinghua University -->
 
 # Skills
 
@@ -46,7 +50,7 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-# Talks
+<!-- # Talks
 
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -54,10 +58,6 @@ redirect_from:
 
 # Teaching
 
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
 # Service and leadership
 
-- Currently signed in to 43 different slack teams
+- Currently signed in to 43 different slack teams -->
