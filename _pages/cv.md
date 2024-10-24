@@ -9,56 +9,55 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+# Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- B.Eng. in Vehicle Engineering, Tsinghua University, 2023-Present
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+# Professional Activities
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Technical Competitions
 
-Publications
-======
+- Fall 2024: 27th Hardware Design Competition People's Livelihood Track, THU, First Prize
+- Fall 2024: 27th Hardware Design Competition, THU, Third Prize
+- Summer 2024: RoboCup 2024, Humanoid League KidSize, Quarterfinalist
+- Summer 2024: RoboCup China Open 2024, Humanoid League, Champion
+- Summer 2024: 18th Intelligent Vehicle Competition, Department of Engineering Physics, First Prize
+- Fall 2023: 8th Intelligent Vehicle Competition, School of Vehicle and Mobility, Excellence Award
+
+## Teaching Assistant
+
+- Fall 2024: Exploration to Scientific Research of Lab, Tsinghua University
+
+- Fall 2024: Projects Design: Humanoid Soccer Robot, Tsinghua University
+
+# Skills
+
+- Machine Learning
+- C/C++
+- Python
+- Git
+- Linux
+- ROS
+- Solidworks
+
+# Publications
+
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
+
+<!-- # Talks
+
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
-======
+
+# Teaching
+
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+# Service and leadership
+
+- Currently signed in to 43 different slack teams -->
