@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2024-spring-teaching-2
 venue: "清华大学"
-date: 2024-03
+date: 2024-03-01
 location: "北京，中国"
 ---
 
