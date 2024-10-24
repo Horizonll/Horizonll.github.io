@@ -46,7 +46,7 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-<!-- # Talks
+# Talks
 
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -60,4 +60,4 @@ redirect_from:
 
 # Service and leadership
 
-- Currently signed in to 43 different slack teams -->
+- Currently signed in to 43 different slack teams
