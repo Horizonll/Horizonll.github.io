@@ -26,9 +26,9 @@ redirect_from:
 
 ## Teaching Assistant
 
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
 # Skills
 
@@ -42,9 +42,9 @@ redirect_from:
 
 # Publications
 
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
 
 <!-- # Talks
 
