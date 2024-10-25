@@ -2,7 +2,6 @@
 title: "宁静海滨"
 excerpt: "岱海<br/><img src='/images/20241024-1.png'>"
 collection: portfolio
-date: 2024-10-24
 ---
 
 高考结束
