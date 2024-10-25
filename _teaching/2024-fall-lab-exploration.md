@@ -2,7 +2,7 @@
 title: "实验室科研探究"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2024-fall-teaching-1
+permalink: /teaching/2024-fall-lab-exploration
 venue: "清华大学，训练中心"
 date: 2024-09-01
 location: "北京，中国"
@@ -14,4 +14,4 @@ location: "北京，中国"
 
 - 课程助教
 - 足球机器人讲解
-- 3D 打印机讲解
+- 3D 打印培训
