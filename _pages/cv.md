@@ -11,7 +11,7 @@ redirect_from:
 
 # Education
 
-- Undergraduate, Vehicle Engineering, Tsinghua University, 2023-Present
+- Undergraduate Student, Vehicle Engineering, Tsinghua University, 2023-Present
 
 # Professional Activities
 
@@ -32,13 +32,9 @@ redirect_from:
 
 # Skills
 
-- Machine Learning
-- C/C++
-- Python
-- Git
-- Linux
+- C/C++, Python
 - ROS
-- Solidworks
+- Deep Learning
 
 # Publications
 

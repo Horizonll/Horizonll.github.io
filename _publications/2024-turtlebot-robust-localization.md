@@ -3,7 +3,7 @@ title: "Turtlebot 4移动机器人鲁棒定位算法"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-turtlebot-robust-localization
-excerpt: "摘要"
+excerpt: "SRT 项目"
 date: 2024-10-24
 venue: "Tsinghua University"
 # slidesurl: "http://horizonll.github.io/files/slides1.pdf"
