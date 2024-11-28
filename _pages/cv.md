@@ -17,12 +17,13 @@ redirect_from:
 
 ## Technical Competitions
 
-- Fall 2024: 27th Hardware Design Competition People's Livelihood Track, THU, First Prize
-- Fall 2024: 27th Hardware Design Competition, THU, Third Prize
+- Fall 2024: The 6th Global Campus Algorithm Elite Competition on Artificial Intelligence National Finals, First Prize
+- Fall 2024: The 27th Hardware Design Competition People's Livelihood Track, THU, First Prize
+- Fall 2024: The 27th Hardware Design Competition, THU, Third Prize
 - Summer 2024: RoboCup China Open 2024, Humanoid League, Champion
 - Summer 2024: RoboCup 2024, Humanoid League KidSize, Quarterfinalist
-- Summer 2024: 18th Intelligent Vehicle Competition, Department of Engineering Physics, First Prize
-- Fall 2023: 8th Intelligent Vehicle Competition, School of Vehicle and Mobility, Excellence Award
+- Summer 2024: The 18th Intelligent Vehicle Competition, Department of Engineering Physics, First Prize
+- Fall 2023: The 8th Intelligent Vehicle Competition, School of Vehicle and Mobility, Excellence Award
 
 ## Teaching Assistant
 
