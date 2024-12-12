@@ -1,7 +1,7 @@
 ---
 title: "实验室科研探究"
 collection: teaching
-type: ""
+type: "Undergraduate course"
 permalink: /teaching/2024-fall-lab-exploration
 venue: "Tsinghua University"
 date: 2024-09-01
