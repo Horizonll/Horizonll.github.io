@@ -1,9 +1,9 @@
 ---
 # Display name
-title: 何睿泽
+title: Ruize He
 
 # Name pronunciation (optional)
-name_pronunciation: Ruize He
+name_pronunciation:
 
 # Full name (for SEO)
 first_name: Ruize
