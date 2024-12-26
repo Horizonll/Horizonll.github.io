@@ -45,7 +45,7 @@ education:
   - area: B.Eng. in Vehicle Engineering
     institution: Tsinghua University
     date_start: 2023-09-01
-    date_end: 2027-06-30
+    date_end: ""
     # summary: |
     #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     # button:
@@ -64,37 +64,37 @@ work:
       - Leading the decision group to develop the decision-making algorithm of the soccer robot
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-# skills:
-#   - name: Technical Skills
-#     items:
-#       - name: Python
-#         description: ""
-#         percent: 80
-#         icon: code-bracket
-#       - name: Data Science
-#         description: ""
-#         percent: 100
-#         icon: chart-bar
-#       - name: SQL
-#         description: ""
-#         percent: 40
-#         icon: circle-stack
-#   - name: Hobbies
-#     color: "#eeac02"
-#     color_border: "#f0bf23"
-#     items:
-#       - name: Hiking
-#         description: ""
-#         percent: 60
-#         icon: person-simple-walk
-#       - name: Cats
-#         description: ""
-#         percent: 100
-#         icon: cat
-#       - name: Photography
-#         description: ""
-#         percent: 80
-#         icon: camera
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ""
+        percent: 80
+        icon: code-bracket
+      # - name: Data Science
+      #   description: ""
+      #   percent: 100
+      #   icon: chart-bar
+      # - name: SQL
+      #   description: ""
+      #   percent: 40
+      #   icon: circle-stack
+  - name: Hobbies
+    color: "#eeac02"
+    color_border: "#f0bf23"
+    items:
+      - name: Hiking
+        description: ""
+        percent: 60
+        icon: person-simple-walk
+      # - name: Cats
+      #   description: ""
+      #   percent: 100
+      #   icon: cat
+      # - name: Photography
+      #   description: ""
+      #   percent: 80
+      #   icon: camera
 
 languages:
   - name: Chinese
@@ -124,12 +124,12 @@ awards:
   - title: Hardware Design Competition, Third Prize
     date: "2024-09-20"
     awarder: Tsinghua University
-  - title: RoboCup China Open 2024, Humanoid League, Champion
-    date: "2024-05-19"
-    awarder: Chinese Association of Automation
   - title: RoboCup 2024, Humanoid League KidSize, Quarterfinalist
     date: "2024-07-22"
     awarder: RoboCup Federation
+  - title: RoboCup China Open 2024, Humanoid League, Champion
+    date: "2024-05-19"
+    awarder: Chinese Association of Automation
   - title: Intelligent Vehicle Competition, First Prize
     date: "2024-06-03"
     awarder: Department of Engineering Physics
