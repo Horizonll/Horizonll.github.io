@@ -9,7 +9,7 @@ tags:
 image:
 ---
 
-# Welcome to a unique course designed to foster undergraduate innovation by integrating theoretical knowledge with practical applications!
+**Welcome to a unique course designed to foster undergraduate innovation by integrating theoretical knowledge with practical applications!**
 
 The field of humanoid soccer robot technology offers a comprehensive platform for innovative practice, and this course is tailored to leverage that potential.
 
