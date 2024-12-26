@@ -62,6 +62,15 @@ work:
     summary: |2-
       Responsibilities include:
       - Leading the decision group to develop the decision-making algorithm of the soccer robot
+  - position: Student Researcher
+    company_name: iDlab
+    company_url: "http://www.idlab-tsinghua.com/"
+    company_logo: ""
+    date_start: 2024-12-01
+    date_end: ""
+    summary: |2-
+      Responsibilities include:
+      - Researching on safe reinforcement learning
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
