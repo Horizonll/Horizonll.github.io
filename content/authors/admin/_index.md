@@ -78,28 +78,28 @@ skills:
     items:
       - name: Python
         description: ""
-        percent: 80
-        icon: code-bracket
+        percent:
+        icon: devicon/python
       - name: C++
         description: ""
-        percent: 80
-        icon: devicon/cplusplus-line
-      # - name: Data Science
-      #   description: ""
-      #   percent: 100
-      #   icon: chart-bar
-      # - name: SQL
-      #   description: ""
-      #   percent: 40
-      #   icon: circle-stack
+        percent:
+        icon: devicon/cplusplus
+      - name: ROS
+        description: ""
+        percent:
+        icon: devicon/ros
+      - name: PyTorch
+        description: ""
+        percent:
+        icon: devicon/pytorch
   - name: Hobbies
     color: "#eeac02"
     color_border: "#f0bf23"
     items:
-      - name: Hiking
+      - name: Music
         description: ""
-        percent: 60
-        icon: person-simple-walk
+        percent:
+        icon: hero/musical-note
       # - name: Cats
       #   description: ""
       #   percent: 100
