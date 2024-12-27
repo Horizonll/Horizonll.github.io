@@ -44,7 +44,7 @@ interests:
 education:
   - area: B.Eng. in Vehicle Engineering
     institution: Tsinghua University
-    date_start: 2023-09-01
+    date_start: 2023-08-23
     date_end: ""
     # summary: |
     #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
@@ -80,6 +80,10 @@ skills:
         description: ""
         percent: 80
         icon: code-bracket
+      - name: C++
+        description: ""
+        percent: 80
+        icon: devicon/cplusplus-plain
       # - name: Data Science
       #   description: ""
       #   percent: 100
