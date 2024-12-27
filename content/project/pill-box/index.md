@@ -2,6 +2,10 @@
 title: PillPalPro - A Multifunctional Smart Pill Box
 date: 2024-09-13
 external_link:
+authors:
+  - admin
+  - Fan Bin
+  - Lin Tianhao
 tags:
   - IoT
 ---
