@@ -83,7 +83,7 @@ skills:
       - name: C++
         description: ""
         percent: 80
-        icon: devicon/cplusplus-plain
+        icon: hero/sparkles
       # - name: Data Science
       #   description: ""
       #   percent: 100
