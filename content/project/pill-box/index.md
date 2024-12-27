@@ -8,6 +8,7 @@ authors:
   - Lin Tianhao
 tags:
   - IoT
+  - Healthcare
 ---
 
 I'm excited to introduce our innovative project, PillPalPro, a multifunctional smart pill box designed to serve the elderly.
