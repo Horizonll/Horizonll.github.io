@@ -2,6 +2,8 @@
 title: AI-Generated Facial Image Authentication
 date: 2024-11-17
 external_link:
+authors:
+  - admin
 tags:
   - Computer Vision
 ---
