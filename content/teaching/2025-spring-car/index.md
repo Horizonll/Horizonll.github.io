@@ -1,7 +1,7 @@
 ---
 title: Innovation Practice of Intelligent Car Competition
 summary: A unique interdisciplinary course at Tsinghua University that provides students with hands-on experience in the field of intelligent vehicles.
-date: 2024-03-01
+date: 2025-03-01
 type: docs
 math: false
 tags:
