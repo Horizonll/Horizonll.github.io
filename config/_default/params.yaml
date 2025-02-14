@@ -36,8 +36,7 @@ header:
     show_theme_chooser: true
     logo:
       text: "Ruize He | THU"
-      filename: "icon.png"
-    highlight_active_link: true
+
 # Site footer
 footer:
   copyright:
