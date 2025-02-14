@@ -73,6 +73,7 @@ work:
     summary: |2-
       Responsibilities include:
       - Researching on robot localization and reinforcement learning
+
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
@@ -100,16 +101,8 @@ skills:
     items:
       - name: Music
         description: ""
-        percent:
+        percent: 50
         icon: hero/musical-note
-      # - name: Cats
-      #   description: ""
-      #   percent: 100
-      #   icon: cat
-      # - name: Photography
-      #   description: ""
-      #   percent: 80
-      #   icon: camera
 
 languages:
   - name: Chinese
@@ -122,14 +115,6 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  # - title: "Object-Oriented Programming in R"
-  #   url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-  #   certificate_url: https://www.datacamp.com
-  #   date: "2023-01-21"
-  #   awarder: datacamp
-  #   icon: datacamp
-  #   summary: |
-  #     Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
   - title: Global Campus Algorithm Elite Competition on Artificial Intelligence, First Prize
     date: "2024-11-17"
     awarder: JiangSu Association of Artificial Intelligence
