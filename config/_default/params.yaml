@@ -13,8 +13,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ""
-    org_name: ""
-    description: "The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website."
+    org_name: "Tsinghua University"
+    description: "Ruize He's academic portfolio - A B.Eng. student at Tsinghua University focusing on Vehicle Engineering, Autonomous Driving, and Robotics."
     twitter: "GetResearchDev"
   analytics:
     google_analytics: ""
@@ -23,7 +23,7 @@ marketing:
     fathom: ""
     pirsch: ""
   verification:
-    google: ""
+    google: "BT8tUrSS70tTxolz6jFPMGPsiDu-14G50wPXxjwCoSU"
     baidu: ""
 
 # Site header
