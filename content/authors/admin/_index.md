@@ -53,10 +53,8 @@ education:
     #   url: "https://example.com"
 
 work:
-  - position: Decision Group Leader, THMOS Soccer Robot Team
-    company_name: Tsinghua University
-    company_url: ""
-    company_logo: ""
+  - position: Decision Group Leader
+    company_name: THMOS RoboCup
     date_start: 2024-09-01
     date_end: ""
     summary: |2-
@@ -69,7 +67,6 @@ work:
     company_url: "http://www.idlab-tsinghua.com/"
     company_logo: ""
     date_start: 2024-11-01
-    date_end: ""
     summary: |2-
       Responsibilities include:
       - Researching on robot localization and reinforcement learning
