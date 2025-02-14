@@ -1,7 +1,7 @@
 ---
 title: Projects Design-Humanoid Soccer Robot
 summary: Enhancing Undergraduate Innovation Skills through Humanoid Soccer Robot Technology
-date: 2024-09-01
+# date: 2024-09-01
 type: docs
 math: false
 tags:
