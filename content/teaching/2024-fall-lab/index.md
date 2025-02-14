@@ -1,7 +1,6 @@
 ---
 title: Exploration to Scientific Research of Lab
 summary: Exploring RoboCup Humanoid Soccer with Tsinghua University's THMOS Team
-date: 2024-09-01
 type: docs
 math: false
 tags:
