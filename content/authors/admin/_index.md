@@ -84,16 +84,10 @@ skills:
         percent:
         icon: devicon/python
       - name: C++
-        description: ""
-        percent:
         icon: devicon/cplusplus
       - name: ROS
-        description: ""
-        percent:
         icon: devicon/ros
       - name: PyTorch
-        description: ""
-        percent:
         icon: devicon/pytorch
   - name: Hobbies
     color: "#eeac02"
@@ -101,7 +95,7 @@ skills:
     items:
       - name: Music
         description: ""
-        percent: 50
+        percent:
         icon: hero/musical-note
 
 languages:
