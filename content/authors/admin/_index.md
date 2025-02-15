@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Ruize He
+title: Ruize He(何睿泽)
 
 # Name pronunciation (optional)
 name_pronunciation:
