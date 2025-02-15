@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Ruize He(何睿泽)
+title: Ruize He
 
 # Name pronunciation (optional)
 name_pronunciation:
 
 # Full name (for SEO)
-first_name: Ruize
-last_name: He
+first_name: Ruize(睿泽)
+last_name: He(何)
 
 # Status emoji
 status:
