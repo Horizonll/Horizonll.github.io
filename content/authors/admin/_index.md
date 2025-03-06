@@ -38,12 +38,12 @@ profiles:
 
 interests:
   - Robotics
-  - Machine Learning
-  - Automatic Driving
+  - Multimodal Large Language Model
+  - Autonomous Driving
 
 education:
   - area: B.Eng. in Vehicle Engineering
-    institution: Tsinghua University
+    institution: School of Vehicle and Mobility, Tsinghua University
     date_start: 2023-08-23
     date_end: ""
     # summary: |
@@ -66,10 +66,10 @@ work:
     company_name: iDlab, Tsinghua University
     company_url: "http://www.idlab-tsinghua.com/"
     company_logo: ""
-    date_start: 2024-11-01
+    date_start: 2024-03-01
     summary: |2-
       Responsibilities include:
-      - Researching on robot localization and reinforcement learning
+      - Researching on robot localization
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
