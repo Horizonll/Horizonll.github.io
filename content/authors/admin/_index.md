@@ -53,17 +53,17 @@ education:
     #   url: "https://example.com"
 
 work:
-  - position: Decision Group Leader
-    company_name: THMOS RoboCup
+  - position: Decision and Perception Group Leader
+    company_name: THMOS, Tsinghua University
     date_start: 2024-09-01
     date_end: ""
     summary: |2-
       Responsibilities include:
-      - Leading the decision group to develop the decision-making algorithm of the soccer robot
-      - Teaching new members the basic knowledge of robotics
-
-  - position: Student Researcher
-    company_name: iDlab
+      - Leading the decision and perception group to develop multi-robot decision-making, object detection and localization algorithms of the soccer robots
+      - Teach robotics basics to new members, e.g. ROS
+      - TA for Humanoid Soccer Robot
+  - position: Student Researcher Assistant
+    company_name: iDlab, Tsinghua University
     company_url: "http://www.idlab-tsinghua.com/"
     company_logo: ""
     date_start: 2024-11-01
