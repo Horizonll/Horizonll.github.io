@@ -59,17 +59,17 @@ work:
     date_end: ""
     summary: |2-
       Responsibilities include:
-      - Leading the decision and perception group to develop multi-robot decision-making, object detection and localization algorithms of the soccer robots
+      - Lead the decision and perception group to develop multi-robot decision-making, object detection and localization algorithms of the soccer robots
       - Teach robotics basics to new members, e.g. ROS
       - TA for Humanoid Soccer Robot
-  - position: Student Researcher Assistant
+  - position: Student Research Assistant
     company_name: iDlab, Tsinghua University
     company_url: "http://www.idlab-tsinghua.com/"
     company_logo: ""
     date_start: 2024-03-01
     summary: |2-
       Responsibilities include:
-      - Researching on robot localization
+      - Research on robot localization
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
