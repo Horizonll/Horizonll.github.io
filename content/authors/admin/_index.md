@@ -53,23 +53,30 @@ education:
     #   url: "https://example.com"
 
 work:
+  - position: Student Research Assistant
+    company_name: LEAP Lab, Tsinghua University
+    company_url: "https://www.leaplab.ai/"
+    company_logo: ""
+    date_start: 2024-12-01
+    summary: |2-
+      - Efficient Multimodal Large Language Model
+
   - position: Decision and Perception Group Leader
     company_name: THMOS, Tsinghua University
     date_start: 2024-09-01
     date_end: ""
     summary: |2-
-      Responsibilities include:
       - Lead the decision and perception group to develop multi-robot decision-making, object detection and localization algorithms of the soccer robots
       - Teach robotics basics to new members, e.g. ROS
       - TA for Humanoid Soccer Robot
+
   - position: Student Research Assistant
     company_name: iDlab, Tsinghua University
     company_url: "http://www.idlab-tsinghua.com/"
     company_logo: ""
     date_start: 2024-03-01
     summary: |2-
-      Responsibilities include:
-      - Research on robot localization
+      - Robot Localization
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
