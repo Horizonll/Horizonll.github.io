@@ -1,17 +1,17 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Ruize He",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
+    "email": "herz23@mails.tsinghua.edu.cn",
     "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
+    "url": "https://horizonll.github.io/",
     "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
+      "city": "Beijing",
+      "countryCode": "China",
       "region": "California"
     },
     "profiles": [
