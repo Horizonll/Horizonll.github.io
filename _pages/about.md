@@ -8,8 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    Contact Info
-    - Email: herz23@mails.tsinghua.edu.cn
+    Email: herz23@mails.tsinghua.edu.cn
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
