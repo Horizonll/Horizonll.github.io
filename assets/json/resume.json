@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Ruize He",
-    "image": "assets/img/prof_pic.jpg",
+    "image": "prof_pic.jpg",
     "email": "herz23@mails.tsinghua.edu.cn",
     "url": "https://horizonll.github.io/",
     "summary": "Undergraduate Student at Tsinghua University, Majoring in Vehicle Engineering"
@@ -17,23 +17,14 @@
       "endDate": ""
     }
   ],
-  "Research": [
-    {
-      "name": "iDLab",
-      "position": "Student Research Assistant",
-      "startDate": "2024-03",
-      "endDate": "",
-      "summary": "Robot Localization\nReinforcement Learning"
-    },
+  "work": [
     {
       "name": "LEAP Lab",
       "position": "Student Research Assistant",
       "startDate": "2024-12",
       "endDate": "",
       "summary": "Efficient Multimodal Large Language Model"
-    }
-  ],
-  "work": [
+    },
     {
       "name": "THMOS",
       "position": "Decision and Perception Group Leader",
@@ -42,9 +33,11 @@
       "summary": "Develop multi-robot decision-making, object detection and localization algorithms of the humanoid soccer robots"
     },
     {
-      "position": "TA for Intelligent Vehicle Competition",
-      "startDate": "2024-09",
-      "endDate": ""
+      "name": "iDLab",
+      "position": "Student Research Assistant",
+      "startDate": "2024-03",
+      "endDate": "",
+      "summary": "Robot Localization\nReinforcement Learning"
     }
   ],
   "awards": [
