@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI-Generated Facial Image Authentication
-# description: with background image
+description: 
 img: assets/img/1.png
 ---
 
