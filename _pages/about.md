@@ -7,7 +7,7 @@ subtitle: Undergraduate Student at Tsinghua University, Majoring in Vehicle Engi
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
     <p>123 your address street</p>
@@ -22,4 +22,4 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-I am currently a second-year undergraduate student at Tsinghua University, majoring in Vehicle Engineering. I am interested in robotics, multimodal large language model and autonomous driving.
+Hey, I am Ruize He, an undergraduate student at Tsinghua University. My research interests are multi-modal machine learning, autonomous driving and robot learning. Check out our MARS Lab Website for a full list of research projects and publications.
