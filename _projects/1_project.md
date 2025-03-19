@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI-Generated Facial Image Authentication
-description: a
+# description: a
 img: assets/img/1.png
 ---
 
@@ -12,8 +12,3 @@ Discover the heart of my award-winning AI-Generated Facial Image Authentication 
 Feel free to dive into the code and understand the mechanics behind the algorithm that won the Global Campus Artificial Intelligence Algorithm Elite Competition. You can find the repository at the following link: https://github.com/Horizonll/AI-Detector
 
 I look forward to your feedback and contributions!
-
-
-
-
-

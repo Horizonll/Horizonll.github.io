@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PillPalPro - A Multifunctional Smart Pill Box
-description: a
+# description: a
 img: assets/img/2.jpg
 ---
 
