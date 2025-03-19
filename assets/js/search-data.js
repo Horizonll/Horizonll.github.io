@@ -396,18 +396,17 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+    },{id: "news-thmos-team-won-the-champion-in-the-humanoid-league-of-robocup-china-open-2024",
+          title: 'THMOS team won the champion in the Humanoid League of RoboCup China Open...',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+              window.location.href = "/news/1/";
+            },},{id: "news-thmos-reached-the-quarter-finals-in-the-humanoid-league-kid-size-at-robocup-2024",
+          title: 'THMOS reached the quarter-finals in the Humanoid League Kid Size at RoboCup 2024!...',
           description: "",
-          section: "News",},{id: "projects-ai-generated-facial-image-authentication",
+          section: "News",handler: () => {
+              window.location.href = "/news/2/";
+            },},{id: "projects-ai-generated-facial-image-authentication",
           title: 'AI-Generated Facial Image Authentication',
           description: "",
           section: "Projects",handler: () => {
