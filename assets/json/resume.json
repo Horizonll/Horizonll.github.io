@@ -17,6 +17,36 @@
       "endDate": ""
     }
   ],
+  "Research": [
+    {
+      "name": "iDLab",
+      "position": "Student Research Assistant",
+      "startDate": "2024-03",
+      "endDate": "",
+      "summary": "Robot Localization\nReinforcement Learning"
+    },
+    {
+      "name": "LEAP Lab",
+      "position": "Student Research Assistant",
+      "startDate": "2024-12",
+      "endDate": "",
+      "summary": "Efficient Multimodal Large Language Model"
+    }
+  ],
+  "work": [
+    {
+      "name": "THMOS",
+      "position": "Decision and Perception Group Leader",
+      "startDate": "2024-09",
+      "endDate": "",
+      "summary": "Develop multi-robot decision-making, object detection and localization algorithms of the humanoid soccer robots"
+    },
+    {
+      "position": "TA for Intelligent Vehicle Competition",
+      "startDate": "2024-09",
+      "endDate": ""
+    }
+  ],
   "awards": [
     {
       "title": "Global Campus Algorithm Elite Competition on Artificial Intelligence (China), First Prize",
@@ -35,7 +65,7 @@
     },
     {
       "title": "Hardware Design Competition People's Livelihood Track, First Prize",
-      "date": "2024-9",
+      "date": "2024-09",
       "awarder": "Tsinghua University"
     },
     {
@@ -45,6 +75,11 @@
     },
     {
       "title": "RoboCup 2024, Humanoid League KidSize, Quarterfinalist",
+      "date": "2024-07",
+      "awarder": "RoboCup Federation"
+    },
+    {
+      "title": " RoboCup 2024, Humanoid League AdultSize, 5th Place",
       "date": "2024-07",
       "awarder": "RoboCup Federation"
     },
