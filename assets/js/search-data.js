@@ -442,19 +442,14 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-ai-generated-facial-image-authentication",
           title: 'AI-Generated Facial Image Authentication',
-          description: "a",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-pillpalpro-a-multifunctional-smart-pill-box",
           title: 'PillPalPro - A Multifunctional Smart Pill Box',
-          description: "a",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
             },},{
         id: 'social-email',
         title: 'email',
