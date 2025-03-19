@@ -58,12 +58,12 @@ ninja.data = [{
           title: 'AI-Generated Facial Image Authentication',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project.html";
+              window.location.href = "/projects/1.html";
             },},{id: "projects-pillpalpro-a-multifunctional-smart-pill-box",
           title: 'PillPalPro - A Multifunctional Smart Pill Box',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project.html";
+              window.location.href = "/projects/2.html";
             },},{
         id: 'social-email',
         title: 'email',
