@@ -7,27 +7,12 @@ nav: true
 nav_order: 6
 ---
 
-<!-- Display projects without categories -->
+# 2025 Spring
 
-{% assign sorted_projects = site.teaching | sort: "importance" %}
+Innovation Practice of Intelligent Car Competition, Teaching Assistant
 
-  <!-- Generate cards for each project -->
+# 2024 Fall
 
-{% if page.horizontal %}
+Exploration to Scientific Research of Lab, Teaching Assistant
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+Projects Design-Humanoid Soccer Robot, Teaching Assistant
