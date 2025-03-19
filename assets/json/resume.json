@@ -12,7 +12,7 @@
       "location": "Beijing, China",
       "url": "https://www.tsinghua.edu.cn/",
       "area": "Vehicle Engineering",
-      "studyType": "Bachelor",
+      "studyType": "Bachelor of Engineering",
       "startDate": "2023-08",
       "endDate": ""
     }
@@ -37,7 +37,7 @@
       "position": "Student Research Assistant",
       "startDate": "2024-03",
       "endDate": "",
-      "summary": "Robot Localization\nReinforcement Learning"
+      "summary": "Robot Localization, Reinforcement Learning"
     }
   ],
   "awards": [
