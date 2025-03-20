@@ -12,6 +12,6 @@ nav_order: 6
 
 # 2024 Fall
 
-Exploration to Scientific Research of Lab, Teaching Assistant
+## Exploration to Scientific Research of Lab, Teaching Assistant
 
 ## Projects Design-Humanoid Soccer Robot, Teaching Assistant
