@@ -11,4 +11,4 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-Hey, I am Ruize He, an undergraduate student at Tsinghua University. My research interests are multi-modal machine learning, autonomous driving and robot learning. Check out our MARS Lab Website for a full list of research projects and publications.
+Hey, I am Ruize He, an undergraduate student at Tsinghua University. My research interests are multi-modal machine learning, autonomous driving and robot learning.
