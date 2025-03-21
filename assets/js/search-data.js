@@ -44,13 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "news-thmos-team-won-the-champion-in-the-humanoid-league-of-robocup-china-open-2024",
-          title: 'THMOS team won the champion in the Humanoid League of RoboCup China Open...',
+        },{id: "news-winner-of-robocup-china-open-2024",
+          title: 'Winner of RoboCup China Open 2024',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/1.html";
-            },},{id: "news-thmos-reached-the-quarter-finals-in-the-humanoid-league-kid-size-at-robocup-2024",
-          title: 'THMOS reached the quarter-finals in the Humanoid League Kid Size at RoboCup 2024!...',
+            },},{id: "news-robocup-2024",
+          title: 'RoboCup 2024',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2.html";
