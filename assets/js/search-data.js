@@ -44,11 +44,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/assets/pdf/CV.pdf";
           },
-        },{id: "news-tsinghua-university-s-thmos-team-emerged-victorious-in-the-humanoid-league-of-the-robocup-china-open-2024",
-          title: 'Tsinghua University’s THMOS team emerged victorious in the humanoid league of the RoboCup...',
+        },{id: "news-tada-thmos-won-the-1st-place-in-the-humanoid-league-of-the-robocup-china-open-2024",
+          title: ':tada:THMOS won the 1st place in the humanoid league of the RoboCup China...',
           description: "",
-          section: "News",},{id: "news-thmos-reached-the-quarter-finals-in-the-humanoid-league-kid-size-and-5-th-place-in-the-adultsize-league-at-robocup-2024",
-          title: 'THMOS reached the quarter-finals in the Humanoid League Kid Size and 5-th place...',
+          section: "News",},{id: "news-tada-thmos-reached-the-quarter-finals-in-the-humanoid-league-kid-size-and-5-th-place-in-the-adultsize-league-at-robocup-2024",
+          title: ':tada:THMOS reached the quarter-finals in the Humanoid League Kid Size and 5-th place...',
           description: "",
           section: "News",},{id: "projects-ai-generated-facial-image-authentication",
           title: 'AI-Generated Facial Image Authentication',
