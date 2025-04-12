@@ -30,19 +30,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/assets/pdf/CV.pdf";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/assets/pdf/CV.pdf";
           },
         },{id: "news-tsinghua-university-s-thmos-team-emerged-victorious-in-the-humanoid-league-of-the-robocup-china-open-2024",
           title: 'Tsinghua University’s THMOS team emerged victorious in the humanoid league of the RoboCup...',
@@ -55,8 +55,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-pillpalpro-a-multifunctional-smart-pill-box",
-          title: 'PillPalPro - A Multifunctional Smart Pill Box',
+            },},{id: "projects-",
+          title: '',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
@@ -73,13 +73,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/Horizonll", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
         },
       },{
       id: 'light-theme',
