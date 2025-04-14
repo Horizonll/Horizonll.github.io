@@ -42,7 +42,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/assets/pdf/CV.pdf";
+            window.location.href = "/assets/pdf/cv.pdf";
           },
         },{id: "news-tada-thmos-won-the-1st-place-in-the-humanoid-league-of-the-robocup-china-open-2024",
           title: ':tada:THMOS won the 1st place in the humanoid league of the RoboCup China...',
