@@ -55,8 +55,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-",
-          title: '',
+            },},{id: "projects-pillpalpro-a-multifunctional-smart-pill-box",
+          title: 'PillPalPro: A Multifunctional Smart Pill Box',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
