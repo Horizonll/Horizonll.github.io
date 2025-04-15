@@ -7,12 +7,12 @@ nav: true
 nav_order: 5
 ---
 
-## 2025 Spring
+## Spring 2025
 
-- Intelligent Car, Teaching Assistant
+- *Intelligent Car*, Teaching Assistant
 
-## 2024 Fall
+## Fall 2024
 
-- Exploration to Scientific Research of Lab, Teaching Assistant
+- *Exploration to Scientific Research of Lab*, Teaching Assistant
 
-- Humanoid Soccer Robot, Teaching Assistant
+- *Humanoid Soccer Robot*, Teaching Assistant
