@@ -44,7 +44,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/assets/pdf/cv.pdf";
           },
-        },{id: "news-tada-thmos-won-the-1st-place-in-the-humanoid-league-of-the-robocup-china-open-2024",
+        },{id: "news-tada-thmos-won-the-1st-place-in-the-humanoid-league-of-the-robocup-china-open-2025",
+          title: ':tada:THMOS won the 1st place in the humanoid league of the RoboCup China...',
+          description: "",
+          section: "News",},{id: "news-tada-thmos-won-the-1st-place-in-the-humanoid-league-of-the-robocup-china-open-2024",
           title: ':tada:THMOS won the 1st place in the humanoid league of the RoboCup China...',
           description: "",
           section: "News",},{id: "news-tada-thmos-reached-the-quarter-finals-in-the-humanoid-league-kid-size-and-5-th-place-in-the-adultsize-league-at-robocup-2024",
