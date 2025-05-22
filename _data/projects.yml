@@ -1,0 +1,15 @@
+- title: AI-Generated Facial Image Authentication
+  meta: 2024
+  description:
+  image: /images/1.webp
+  links:
+    - name: Code
+      url: https://github.com/Horizonll/AI-Detector
+
+- title: "PillPalPro: A Multifunctional Smart Pill Box"
+  meta: 2024
+  description:
+  image: /images/2.webp
+  links:
+    - name: Code
+      url: https://github.com/Horizonll/Smart-Pill-Box
