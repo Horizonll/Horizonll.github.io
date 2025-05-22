@@ -35,11 +35,15 @@ Hey, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/1.webp' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 AI-Generated Facial Image Authentication
-
 [**Code**](https://github.com/Horizonll/AI-Detector)
+</div>
+</div>
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/2.webp' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+PillPalPro: A Multifunctional Smart Pill Box
+[**Code**](https://github.com/Horizonll/Smart-Pill-Box)
 </div>
 </div>
 
