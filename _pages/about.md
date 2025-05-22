@@ -33,6 +33,16 @@ Hey, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University
 
 # 🚀 Projects
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/1.webp' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+AI-Generated Facial Image Authentication
+
+[**Code**](https://github.com/Horizonll/AI-Detector)
+
+</div>
+</div>
+
 <!-- # 📝 Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
