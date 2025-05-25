@@ -33,7 +33,7 @@ Hey, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University
 
 # 🚀 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/1.webp' width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/1.webp' width="70%"></div></div>
 <div class='paper-box-text' markdown="1">
 AI-Generated Facial Image Authentication
 
@@ -42,7 +42,7 @@ AI-Generated Facial Image Authentication
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/2.webp' width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/2.webp' width="70%"></div></div>
 <div class='paper-box-text' markdown="1">
 PillPalPro: A Multifunctional Smart Pill Box
 
