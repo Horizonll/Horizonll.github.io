@@ -17,7 +17,7 @@ google_analytics_id      : G-1Q3NNGSF5Y # get google_analytics_id from https://a
 # SEO Related
 google_site_verification : BT8tUrSS70tTxolz6jFPMGPsiDu-14G50wPXxjwCoSU # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   : AA74EB29FCBEBE66AD28068AC51F5170 # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+baidu_site_verification  : # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
 # Site Author
 author:
