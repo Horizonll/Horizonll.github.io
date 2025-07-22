@@ -80,6 +80,8 @@ PillPalPro: A Multifunctional Smart Pill Box
 
 # 🎖 Honors and Awards
 
+- _2025_ RoboCup 2025 Humanoid League AdultSize, 4th Place
+- _2025_ RoboCup 2025 Humanoid League KidSize, 2nd Place
 - _2025_ Toyota × Future Mobility Innovation Challenge, First Prize
 - _2025_ RoboCup China Open 2025 Humanoid League, Champion
 - _2025_ Challenge Cup, Second Prize
