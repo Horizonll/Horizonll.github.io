@@ -80,19 +80,19 @@ PillPalPro: A Multifunctional Smart Pill Box
 
 # 🎖 Honors and Awards
 
-- _2025_ RoboCup 2025 Humanoid League AdultSize, 4th Place
 - _2025_ RoboCup 2025 Humanoid League KidSize, 2nd Place
-- _2025_ Toyota × Future Mobility Innovation Challenge, First Prize
+- _2025_ RoboCup 2025 Humanoid League AdultSize, 4th Place
+- _2025_ Toyota × Future Mobility Innovation Challenge, 1st Prize
 - _2025_ RoboCup China Open 2025 Humanoid League, Champion
-- _2025_ Challenge Cup, Second Prize
-- _2024_ Global Campus AI Algorithm Elite Competition, China, First Prize
-- _2024_ Global Campus AI Algorithm Elite Competition, Beijing, First Prize(Top 1)
+- _2025_ Challenge Cup, 2nd Prize
+- _2024_ Global Campus AI Algorithm Elite Competition, China, 1st Prize
+- _2024_ Global Campus AI Algorithm Elite Competition, Beijing, 1st Place
 - _2024_ Chen Xiaoyue Scholarship
-- _2024_ Hardware Design Competition, Third Prize
-- _2024_ Hardware Design Competition People’s Livelihood Track, First Prize
+- _2024_ Hardware Design Competition, 3rd Prize
+- _2024_ Hardware Design Competition People’s Livelihood Track, 1st Prize
 - _2024_ RoboCup 2024 Humanoid League AdultSize, 5th Place
 - _2024_ RoboCup 2024 Humanoid League KidSize, Top 8
-- _2024_ Intelligent Vehicle Competition, First Prize
+- _2024_ Intelligent Vehicle Competition, 1st Prize
 - _2024_ RoboCup China Open 2024 Humanoid League, Champion
 - _2024_ Intelligent Vehicle Competition, Excellence Award
 
