@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hey, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn). I have conducted research on robot localization at [iDLab](http://182.92.169.58/thulab/labweb) and efficient multimodal large models at [LEAP Lab](https://www.leaplab.ai), and served as the Decision Team Leader of THMOS humanoid robotics team. My research interests are multi-modal machine learning, autonomous driving and robot learning.
+Hey, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn). I have conducted research on robot localization at [iDLab](http://182.92.169.58/thulab/labweb) and efficient multimodal large models at [LEAP Lab](https://www.leaplab.ai), and served as the Decision Team Leader of THMOS humanoid robotics team. My research interests are deep learning and robotics.
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
@@ -27,8 +27,9 @@ Hey, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University
 
 # 🔥 News
 
+- _2025.07_: &nbsp;🎉🎉 THMOS won the 2nd place in the Humanoid League Kid Size and 4th place in the AdultSize at RoboCup 2025!
 - _2025.05_: &nbsp;🎉🎉 THMOS won the 1st place in the humanoid league of the RoboCup China Open 2025!
-- _2024.07_: &nbsp;🎉🎉 THMOS reached the quarter-finals in the Humanoid League Kid Size and 5-th place in the AdultSize League at RoboCup 2024!
+- _2024.07_: &nbsp;🎉🎉 THMOS reached the TOP 8 in the Humanoid League Kid Size and 5-th place in the AdultSize at RoboCup 2024!
 - _2024.06_: &nbsp;🎉🎉 THMOS won the 1st place in the humanoid league of the RoboCup China Open 2024!
 
 # 🚀 Projects
