@@ -71,6 +71,7 @@ PillPalPro: A Multifunctional Smart Pill Box
 
 # 💬 Invited Talks
 
+- _2025.08_, Perception and Decision Making in Humanoid Soccer Robots, Spark Day
 - _2025.05_, Text-Guided Visual Understanding in Multimodal Large Models
 
 # 👨‍🏫 Teaching
