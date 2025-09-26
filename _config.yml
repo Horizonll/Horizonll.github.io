@@ -40,6 +40,14 @@ font: "Serif" # or "Sans Serif"
 # Please remove this if you don't use Google Analytics
 google_analytics: G-1Q3NNGSF5Y
 
+# Bing Webmaster Tools Verification Code
+# Please add your Bing verification code here
+bing_verification: AA74EB29FCBEBE66AD28068AC51F5170 # Add your Bing verification code here, e.g., "1234567890ABCDEF"
+
+# Google Search Console Verification Code
+# Please add your Google verification code here
+google_verification: BT8tUrSS70tTxolz6jFPMGPsiDu-14G50wPXxjwCoSU # Add your Google verification code here, e.g., "abc123def456"
+
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 remote_theme: yaoyao-liu/minimal-light

@@ -13,6 +13,12 @@
     {% if site.canonical %}
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
+    {% if site.bing_verification %}
+    <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
+    {% endif %}
+    {% if site.google_verification %}
+    <meta name="google-site-verification" content="{{ site.google_verification }}" />
+    {% endif %}
 
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
