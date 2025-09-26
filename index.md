@@ -68,7 +68,7 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 
 ## Services
 
-- The World Humanoid Robot Games Referee
+- **August 2025**: The World Humanoid Robot Games Referee
 - **September 2024 - July 2025**: Decision Group Leader, THMOS
 
 ---
