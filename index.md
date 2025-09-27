@@ -12,7 +12,7 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 
 - **[July 2025]** 🎉🎉 THMOS won the 2nd place in the Humanoid League Kid Size and 4th place in the AdultSize at RoboCup 2025!
 - **[May 2025]** 🎉🎉 THMOS won the 1st place in the humanoid league of the RoboCup China Open 2025!
-- **[July 2024]** 🎉🎉 THMOS won the TOP 8 in the Humanoid League Kid Size and 5th place in the AdultSize at RoboCup 2024!
+- **[July 2024]** 🎉🎉 THMOS won the TOP 8 in the Humanoid League Kid Size at RoboCup 2024!
 - **[June 2024]** 🎉🎉 THMOS won the 1st place in the humanoid league of the RoboCup China Open 2024!
 
 ---
@@ -42,7 +42,7 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 - **2024** Chen Xiaoyue Scholarship
 - **2024** Hardware Design Competition, 3rd Prize
 - **2024** Hardware Design Competition People’s Livelihood Track, 1st Prize
-- **2024** RoboCup 2024 Humanoid League AdultSize, 5th Place
+
 - **2024** RoboCup 2024 Humanoid League KidSize, Top 8
 - **2024** Intelligent Vehicle Competition, 1st Prize
 - **2024** RoboCup China Open 2024 Humanoid League, Champion
