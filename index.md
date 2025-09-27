@@ -42,7 +42,6 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 - **2024** Chen Xiaoyue Scholarship
 - **2024** Hardware Design Competition, 3rd Prize
 - **2024** Hardware Design Competition People’s Livelihood Track, 1st Prize
-- **2024** RoboCup 2024 Humanoid League AdultSize, 5th Place
 - **2024** RoboCup 2024 Humanoid League KidSize, Top 8
 - **2024** Intelligent Vehicle Competition, 1st Prize
 - **2024** RoboCup China Open 2024 Humanoid League, Champion
