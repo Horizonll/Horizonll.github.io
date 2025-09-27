@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn). I have conducted research on network architecture for foundation models at [LEAP Lab](https://www.leaplab.ai) and on robot localization at [iDLab](http://182.92.169.58/thulab/labweb). Additionally, I served as the Decision Team Leader of the THMOS humanoid robotics team. My research interests include deep learning and robotics.
+Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn). I have conducted research on network architecture for foundation models at [LEAP Lab]([...)
 
 ---
 
@@ -12,7 +12,7 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 
 - **[July 2025]** 🎉🎉 THMOS won the 2nd place in the Humanoid League Kid Size and 4th place in the AdultSize at RoboCup 2025!
 - **[May 2025]** 🎉🎉 THMOS won the 1st place in the humanoid league of the RoboCup China Open 2025!
-- **[July 2024]** 🎉🎉 THMOS won the TOP 8 in the Humanoid League Kid Size at RoboCup 2024!
+- **[July 2024]** 🎉🎉 THMOS won the TOP 8 in the Humanoid League Kid Size and 5th place in the AdultSize at RoboCup 2024!
 - **[June 2024]** 🎉🎉 THMOS won the 1st place in the humanoid league of the RoboCup China Open 2024!
 
 ---
