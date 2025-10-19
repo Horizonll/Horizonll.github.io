@@ -32,20 +32,25 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 
 ## Honors and Awards
 
-- **2025** RoboCup 2025 Humanoid League KidSize, 2nd Place
-- **2025** RoboCup 2025 Humanoid League AdultSize, 4th Place
-- **2025** Toyota × Future Mobility Innovation Challenge, 1st Prize
-- **2025** RoboCup China Open 2025 Humanoid League, Champion
-- **2025** Challenge Cup, 2nd Prize
-- **2024** Global Campus AI Algorithm Elite Competition, China, 1st Prize
-- **2024** Global Campus AI Algorithm Elite Competition, Beijing, 1st Place
-- **2024** Chen Xiaoyue Scholarship
-- **2024** Hardware Design Competition, 3rd Prize
-- **2024** Hardware Design Competition People’s Livelihood Track, 1st Prize
-- **2024** RoboCup 2024 Humanoid League KidSize, Top 8
-- **2024** Intelligent Vehicle Competition, 1st Prize
-- **2024** RoboCup China Open 2024 Humanoid League, Champion
-- **2024** Intelligent Vehicle Competition, Excellence Award
+### 2025
+
+- RoboCup 2025 Humanoid League KidSize, 2nd Place
+- RoboCup 2025 Humanoid League AdultSize, 4th Place
+- Toyota × Future Mobility Innovation Challenge, 1st Prize
+- RoboCup China Open 2025 Humanoid League, Champion
+- Challenge Cup, 2nd Prize
+
+### 2024
+
+- Global Campus AI Algorithm Elite Competition, China, 1st Prize
+- Global Campus AI Algorithm Elite Competition, Beijing, 1st Place
+- Chen Xiaoyue Scholarship
+- Hardware Design Competition, 3rd Prize
+- Hardware Design Competition People’s Livelihood Track, 1st Prize
+- RoboCup 2024 Humanoid League KidSize, Top 8
+- Intelligent Vehicle Competition, 1st Prize
+- RoboCup China Open 2024 Humanoid League, Champion
+- Intelligent Vehicle Competition, Excellence Award
 
 ---
 
