@@ -19,7 +19,7 @@ Hi, I am Ruize He (何睿泽), an undergraduate student at [Tsinghua University]
 
 ## Educations
 
-- **August 2023 - Present**: Undergraduate student, [School of Vehicle and Mobility](https://www.svm.tsinghua.edu.cn), [Tsinghua University](https://www.tsinghua.edu.cn)
+- **August 2023 - Present**: B.E., [School of Vehicle and Mobility](https://www.svm.tsinghua.edu.cn), [Tsinghua University](https://www.tsinghua.edu.cn)
 
 ---
 
