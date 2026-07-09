@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% seo %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.author_profile.name }}",
+        "alternateName": "{{ site.author_profile.alternate_name }}",
+        "email": "mailto:{{ site.author_profile.email }}",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Tsinghua University"
+        },
+        "url": "{{ site.url }}",
+        "sameAs": [
+          "https://github.com/{{ site.author_profile.github }}",
+          "{{ site.author_profile.scholar }}"
+        ]
+      }
+    </script>
+    <link
+      rel="icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://github.com" />
+    <link rel="preconnect" href="https://scholar.google.com" />
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #2b2b2b;
+        background: #ffffff;
+        line-height: 1.5;
+      }
+      main {
+        width: calc(100% - 32px);
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 8px 0 24px;
+        overflow-wrap: break-word;
+      }
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        padding: 8px 12px;
+        background: #2b2b2b;
+        color: #ffffff;
+        text-decoration: none;
+        z-index: 100;
+      }
+      .skip-link:focus {
+        left: 8px;
+        top: 8px;
+      }
+      .profile {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 8px 0;
+      }
+      .profile-photo {
+        flex: 0 0 256px;
+        width: 256px;
+        max-width: 100%;
+      }
+      .profile-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+      .profile-info {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .profile-info .name,
+      .profile-info .meta {
+        text-align: center;
+      }
+      .profile-info .name {
+        font-size: 18pt;
+        font-weight: bold;
+        margin: 0 0 10px;
+      }
+      .profile-info .meta {
+        font-size: 12pt;
+        margin: 10px 0;
+      }
+      .bio {
+        font-size: 12pt;
+        margin: 0;
+        padding: 0 0 4px;
+      }
+      h2,
+      h3 {
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 15pt;
+        margin: 1.2em 0 0.4em;
+      }
+      h3 {
+        font-size: 13pt;
+        margin: 0.8em 0 0.3em;
+      }
+      ul {
+        padding-left: 40px;
+        margin: 0.4em 0;
+      }
+      ul li {
+        font-size: 11pt;
+        line-height: 150%;
+      }
+      ul li > p {
+        margin: 0;
+      }
+      a {
+        color: #1a4f8b;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        overflow-wrap: anywhere;
+      }
+      a:hover,
+      a:focus-visible {
+        color: #0d3a6b;
+        text-decoration-thickness: 2px;
+      }
+      a:focus-visible {
+        outline: 2px solid #1a4f8b;
+        outline-offset: 2px;
+      }
+      .publications {
+        list-style: none;
+        padding: 0;
+        margin: 0.4em 0;
+      }
+      .logo-list {
+        margin: 0.4em 0;
+      }
+      .logo-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .logo-icon {
+        flex: 0 0 auto;
+        width: 60px;
+        object-fit: contain;
+      }
+      .publication {
+        display: flex;
+        gap: 12px;
+        margin: 0 0 14px;
+      }
+      .pub-marker {
+        flex: 0 0 14px;
+        background: #ffcc99;
+      }
+      .pub-body {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .pub-body p {
+        margin: 0;
+        line-height: 1.5;
+      }
+      .pub-title {
+        font-size: 12pt;
+      }
+      .pub-authors,
+      .pub-venue,
+      .pub-links {
+        font-size: 11pt;
+        color: #4a4a4a;
+      }
+      .pub-links {
+        margin-top: 4px;
+      }
+      .pub-links a {
+        color: #808080;
+      }
+      .pub-links .is-bold {
+        font-weight: bold;
+      }
+      .pub-link-sep {
+        color: #999999;
+        margin: 0 6px;
+      }
+      @media (max-width: 640px) {
+        .profile {
+          flex-direction: column;
+          gap: 12px;
+        }
+        .profile-photo {
+          flex: 0 0 auto;
+        }
+        .profile-info .meta {
+          margin: 6px 0;
+        }
+      }
+      @media (max-width: 480px) {
+        main {
+          width: calc(100% - 24px);
+        }
+        ul {
+          padding-left: 24px;
+        }
+        .publication {
+          gap: 10px;
+        }
+        .pub-marker {
+          flex-basis: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main">{{ content }}</main>
+  </body>
+</html>

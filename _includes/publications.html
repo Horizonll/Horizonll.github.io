@@ -1,0 +1,17 @@
+<ol class="publications">
+  {% for pub in site.data.publications %}
+    <li class="publication">
+      <span class="pub-marker" aria-hidden="true"></span>
+      <div class="pub-body">
+        <p class="pub-title"><em>{{ pub.title }}</em></p>
+        <p class="pub-authors">{{ pub.authors }}</p>
+        <p class="pub-venue">{{ pub.venue }}</p>
+        {% if pub.links and pub.links.size > 0 %}
+          <p class="pub-links">
+            {% for link in pub.links %}<a href="{{ link.url }}" target="_blank" rel="noopener"{% if link.bold %} class="is-bold"{% endif %}>{{ link.text }}</a>{% unless forloop.last %}<span class="pub-link-sep" aria-hidden="true">·</span>{% endunless %}{% endfor %}
+          </p>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>
