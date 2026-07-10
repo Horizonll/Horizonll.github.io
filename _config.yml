@@ -1,0 +1,23 @@
+title: Ruize He | Personal Website
+description: Personal academic homepage
+author: Ruize He
+url: "https://horizonll.github.io"
+baseurl: ""
+
+author_profile:
+  name: "Ruize He"
+  alternate_name: "「何睿泽」"
+  email: "herz23@mails.tsinghua.edu.cn"
+  affiliation: "School of Vehicle and Mobility, Tsinghua University"
+  github: "Horizonll"
+  scholar: "https://scholar.google.com/citations?user=UJ0xmGwAAAAJ"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -1,0 +1,19 @@
+<ul class="logo-list">
+  {% for item in include.items %}
+  <li class="logo-item">
+    {% if item.icon %}
+    <img
+      class="logo-icon"
+      src="{{ item.icon | relative_url }}"
+      width="60"
+      height="60"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+    />
+    {% endif %}
+    <span><em>{{ item.period }}</em> {{ item.text }}</span>
+  </li>
+  {% endfor %}
+</ul>
