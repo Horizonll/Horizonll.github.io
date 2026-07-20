@@ -109,11 +109,6 @@ main {
   min-width: 0;
 }
 
-.profile-info .name,
-.profile-info .meta {
-  text-align: left;
-}
-
 .profile-info .name {
   font-size: var(--font-size-name);
   font-weight: 400;
@@ -146,14 +141,18 @@ h3 {
     var(--space-subsection-heading-bottom);
 }
 
-ul {
+ul,
+ol {
   list-style: none;
-  padding-left: 0;
   margin: 0.5em 0;
+  margin-inline: 0;
+  padding: 0;
+  padding-inline-start: 0;
 }
 
 li {
-  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 li > p {
@@ -176,16 +175,6 @@ a:focus-visible {
 a:focus-visible {
   outline: 2px solid var(--color-link);
   outline-offset: 2px;
-}
-
-.publications {
-  list-style: none;
-  padding: 0;
-  margin: 0.5em 0;
-}
-
-.logo-list {
-  margin: 0.5em 0;
 }
 
 .logo-item {
@@ -218,7 +207,6 @@ a:focus-visible {
 
 .pub-body p {
   margin: 0;
-  line-height: 1.5;
 }
 
 .pub-title {
@@ -240,7 +228,6 @@ a:focus-visible {
 .pub-links a:visited,
 .pub-links a:active {
   color: var(--color-pub-link);
-  text-decoration: none;
 }
 
 .pub-links a:hover,
