@@ -107,6 +107,9 @@ main {
 .profile-info {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-info .name {
@@ -262,11 +265,6 @@ a:focus-visible {
 
   .profile-photo {
     flex: 0 0 auto;
-  }
-
-  .profile-info .name,
-  .profile-info .meta {
-    text-align: center;
   }
 
   .profile-info .meta {
