@@ -148,6 +148,7 @@ h3 {
 }
 
 ul {
+  list-style: none;
   padding-left: var(--space-list-indent);
   margin: 0.5em 0;
 }
