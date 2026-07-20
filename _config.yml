@@ -1,8 +1,21 @@
 title: Ruize He | Personal Website
-description: Personal academic homepage
+description: >-
+  Personal academic homepage of Ruize He (何睿泽), undergraduate at Tsinghua
+  University, researching foundation model architecture and Test-Time Training.
 author: Ruize He
+lang: en
 url: "https://horizonll.github.io"
 baseurl: ""
+logo: /img/1.webp
+
+webmaster_verifications:
+  google: BT8tUrSS70tTxolz6jFPMGPsiDu-14G50wPXxjwCoSU
+
+social:
+  name: Ruize He
+  links:
+    - https://github.com/Horizonll
+    - https://scholar.google.com/citations?user=UJ0xmGwAAAAJ
 
 author_profile:
   name: "Ruize He"
