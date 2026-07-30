@@ -3,6 +3,7 @@ layout: default
 image: /img/1.webp
 ---
 
+<section id="about" class="site-section is-about" markdown="1">
 <div class="profile">
   <div class="profile-photo">
     <img
@@ -36,28 +37,38 @@ image: /img/1.webp
 </div>
 
 I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn){:target="_blank" rel="noopener noreferrer"}. I have conducted research on foundation model architecture at [LEAP Lab](https://www.leaplab.ai){:target="_blank" rel="noopener noreferrer"}. I also served as the Decision Team Leader of the THMOS humanoid robotics team. My research interests include foundation model architecture and Test-Time Training.
+</section>
 
+<section id="news" class="site-section" markdown="1">
 ## News
 
-- [07/2025] 🎉 THMOS won 2nd place in KidSize and 4th place in AdultSize in the Humanoid Soccer League at RoboCup 2025!
-- [05/2025] 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2025!
-- [07/2024] 🎉 THMOS placed in the Top 8 in KidSize and 5th in AdultSize in the Humanoid Soccer League at RoboCup 2024!
-- [06/2024] 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2024!
+- <span class="news-date">[07/2025]</span> 🎉 THMOS won 2nd place in KidSize and 4th place in AdultSize in the Humanoid Soccer League at RoboCup 2025!
+- <span class="news-date">[05/2025]</span> 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2025!
+- <span class="news-date">[07/2024]</span> 🎉 THMOS placed in the Top 8 in KidSize and 5th in AdultSize in the Humanoid Soccer League at RoboCup 2024!
+- <span class="news-date">[06/2024]</span> 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2024!
+</section>
 
+<section id="education" class="site-section" markdown="1">
 ## Education
 
 {% include logo-list.html items=site.data.educations %}
+</section>
 
+<section id="publications" class="site-section" markdown="1">
 ## Publications
 
 [Google Scholar]({{ site.author_profile.scholar }}){:target="_blank" rel="noopener noreferrer"}
 
 {% include publications.html %}
+</section>
 
+<section id="internships" class="site-section" markdown="1">
 ## Internships
 
 {% include logo-list.html items=site.data.internships %}
+</section>
 
+<section id="awards" class="site-section" markdown="1">
 ## Awards and Honors
 
 ### 2025
@@ -80,20 +91,27 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 - Hardware Design Competition, People's Livelihood Track — 1st Prize
 - Hardware Design Competition — 3rd Prize
 - Chen Xiaoyue Scholarship
+</section>
 
+<section id="talks" class="site-section" markdown="1">
 ## Talks
 
 - "Perception and Decision-Making in Humanoid Soccer Robots", Spark Day, 2025
 - "Text-Guided Visual Understanding in Multimodal Large Models", 2025
+</section>
 
+<section id="teaching" class="site-section" markdown="1">
 ## Teaching
 
 - Humanoid Soccer Robot, Teaching Assistant, Fall 2025
 - Intelligent Car, Teaching Assistant, Spring 2025
 - Humanoid Soccer Robot, Teaching Assistant, Fall 2024
 - Exploration of Scientific Research in the Lab, Teaching Assistant, Fall 2024
+</section>
 
+<section id="service" class="site-section" markdown="1">
 ## Professional Service
 
 - Decision Team Leader, THMOS
 - Referee, The World Humanoid Robot Games
+</section>

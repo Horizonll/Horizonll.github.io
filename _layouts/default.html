@@ -37,6 +37,13 @@
     />
     <link
       rel="preload"
+      href="{{ '/assets/fonts/source-serif-4-latin-600.woff2' | relative_url }}"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
       as="image"
       href="{{ '/img/1.webp' | relative_url }}"
       type="image/webp"
@@ -45,6 +52,25 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav id="site-nav" class="site-nav" aria-label="Page sections">
+        <div class="site-nav-inner">
+          <a class="nav-brand" href="#about">{{ profile.name }}</a>
+          <div class="nav-links">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#news">News</a>
+            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#publications">Publications</a>
+            <a class="nav-link" href="#internships">Internships</a>
+            <a class="nav-link" href="#awards">Awards</a>
+            <a class="nav-link" href="#talks">Talks</a>
+            <a class="nav-link" href="#teaching">Teaching</a>
+            <a class="nav-link" href="#service">Service</a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main id="main">{{ content }}</main>
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </body>
 </html>
