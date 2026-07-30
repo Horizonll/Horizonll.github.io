@@ -72,7 +72,7 @@ main {
   font-size: 0.95rem;
 }
 
-.nav-disclosure summary {
+.nav-disclosure {
   display: none;
 }
 
@@ -301,6 +301,14 @@ a:focus-visible {
     margin-bottom: 0.75rem;
   }
 
+  .nav-links {
+    display: none;
+  }
+
+  .nav-disclosure {
+    display: block;
+  }
+
   .nav-disclosure summary {
     display: flex;
     width: 44px;
@@ -327,7 +335,7 @@ a:focus-visible {
   }
 
   .close-icon,
-  .nav-links {
+  .mobile-nav-links {
     display: none;
   }
 
@@ -339,7 +347,7 @@ a:focus-visible {
     display: block;
   }
 
-  .nav-disclosure[open] .nav-links {
+  .nav-disclosure[open] .mobile-nav-links {
     position: absolute;
     top: 100%;
     left: 0;
@@ -353,7 +361,7 @@ a:focus-visible {
     box-shadow: 0 6px 12px rgb(0 0 0 / 8%);
   }
 
-  .nav-links a {
+  .mobile-nav-links a {
     display: flex;
     min-height: 40px;
     align-items: center;
