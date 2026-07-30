@@ -1,0 +1,16 @@
+_site
+vendor
+.bundle
+node_modules
+_data
+_layouts
+_includes
+index.md
+_config.yml
+Gemfile
+Gemfile.lock
+*.webp
+*.png
+*.svg
+*.ico
+*.woff2

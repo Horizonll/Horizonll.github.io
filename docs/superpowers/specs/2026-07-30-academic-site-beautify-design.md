@@ -45,17 +45,17 @@ Out of scope: content rewrites, new sections, dark mode, framework migration, bl
 
 Single page, top-to-bottom, with sticky anchor nav:
 
-| Nav label | Anchor | Source |
-|-----------|--------|--------|
-| About | `#about` | profile + bio |
-| News | `#news` | News list |
-| Education | `#education` | educations data |
-| Publications | `#publications` | publications data |
-| Internships | `#internships` | internships data |
-| Awards | `#awards` | Awards and Honors |
-| Talks | `#talks` | Talks |
-| Teaching | `#teaching` | Teaching |
-| Service | `#service` | Professional Service |
+| Nav label    | Anchor          | Source               |
+| ------------ | --------------- | -------------------- |
+| About        | `#about`        | profile + bio        |
+| News         | `#news`         | News list            |
+| Education    | `#education`    | educations data      |
+| Publications | `#publications` | publications data    |
+| Internships  | `#internships`  | internships data     |
+| Awards       | `#awards`       | Awards and Honors    |
+| Talks        | `#talks`        | Talks                |
+| Teaching     | `#teaching`     | Teaching             |
+| Service      | `#service`      | Professional Service |
 
 No hamburger menu. On small screens the nav is horizontally scrollable.
 
@@ -100,15 +100,15 @@ All disabled or reduced under `prefers-reduced-motion: reduce`.
 
 ## File-level Plan
 
-| File | Change |
-|------|--------|
-| `_layouts/default.html` | Add nav shell, font preloads, script tag for `site.js` |
-| `index.md` | Wrap sections with ids/classes for anchors and reveal; keep content |
-| `assets/css/main.css` | Rebuild token system, nav, profile, sections, responsive, motion |
-| `assets/js/site.js` | New: scroll-spy + reveal observer |
-| `assets/fonts/*` | Add heading font woff2 if not already present |
-| `_includes/*` | Minimal class hooks only if needed; keep data contracts |
-| `_data/*`, `_config.yml` | No semantic content changes |
+| File                     | Change                                                              |
+| ------------------------ | ------------------------------------------------------------------- |
+| `_layouts/default.html`  | Add nav shell, font preloads, script tag for `site.js`              |
+| `index.md`               | Wrap sections with ids/classes for anchors and reveal; keep content |
+| `assets/css/main.css`    | Rebuild token system, nav, profile, sections, responsive, motion    |
+| `assets/js/site.js`      | New: scroll-spy + reveal observer                                   |
+| `assets/fonts/*`         | Add heading font woff2 if not already present                       |
+| `_includes/*`            | Minimal class hooks only if needed; keep data contracts             |
+| `_data/*`, `_config.yml` | No semantic content changes                                         |
 
 ## Testing / Acceptance
 

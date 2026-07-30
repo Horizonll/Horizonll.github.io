@@ -20,24 +20,26 @@
 
 ## File Structure
 
-| Path | Responsibility |
-|------|----------------|
-| `assets/fonts/source-serif-4-latin-600.woff2` | Heading/display font weight |
-| `assets/css/main.css` | Design tokens, layout, nav, profile, sections, responsive, motion |
-| `assets/js/site.js` | Sticky-nav scroll-spy + section reveal observer |
-| `_layouts/default.html` | Nav shell, font preload, script include |
-| `index.md` | Section ids/classes; unchanged prose/data includes |
-| `_includes/publications.html` | Optional class hooks only if needed |
-| `_includes/logo-list.html` | Optional class hooks only if needed |
+| Path                                          | Responsibility                                                    |
+| --------------------------------------------- | ----------------------------------------------------------------- |
+| `assets/fonts/source-serif-4-latin-600.woff2` | Heading/display font weight                                       |
+| `assets/css/main.css`                         | Design tokens, layout, nav, profile, sections, responsive, motion |
+| `assets/js/site.js`                           | Sticky-nav scroll-spy + section reveal observer                   |
+| `_layouts/default.html`                       | Nav shell, font preload, script include                           |
+| `index.md`                                    | Section ids/classes; unchanged prose/data includes                |
+| `_includes/publications.html`                 | Optional class hooks only if needed                               |
+| `_includes/logo-list.html`                    | Optional class hooks only if needed                               |
 
 ---
 
 ### Task 1: Add heading font asset
 
 **Files:**
+
 - Create: `assets/fonts/source-serif-4-latin-600.woff2`
 
 **Interfaces:**
+
 - Consumes: none
 - Produces: self-hosted font file referenced later as `Source Serif 4` weight 600
 
@@ -62,10 +64,12 @@ git commit -m "Add Source Serif 4 heading font"
 ### Task 2: Sticky nav + layout shell
 
 **Files:**
+
 - Modify: `_layouts/default.html`
 - Modify: `index.md` (section wrappers / ids)
 
 **Interfaces:**
+
 - Consumes: section ids listed in design spec
 - Produces: `#site-nav` with `.nav-link[href^="#"]`; sections with `id` + `class="site-section"`; `#main` content unchanged semantically
 
@@ -93,17 +97,10 @@ Add Source Serif preload, sticky nav before `<main>`, and deferred script:
           "name": "Tsinghua University"
         },
         "url": "{{ site.url }}",
-        "sameAs": [
-          "https://github.com/{{ profile.github }}",
-          "{{ profile.scholar }}"
-        ]
+        "sameAs": ["https://github.com/{{ profile.github }}", "{{ profile.scholar }}"]
       }
     </script>
-    <link
-      rel="icon"
-      href="{{ '/favicon.ico' | relative_url }}"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
     <link
       rel="preload"
       href="{{ '/assets/fonts/titillium-web-v19-latin-400.woff2' | relative_url }}"
@@ -118,12 +115,7 @@ Add Source Serif preload, sticky nav before `<main>`, and deferred script:
       type="font/woff2"
       crossorigin
     />
-    <link
-      rel="preload"
-      as="image"
-      href="{{ '/img/1.webp' | relative_url }}"
-      type="image/webp"
-    />
+    <link rel="preload" as="image" href="{{ '/img/1.webp' | relative_url }}" type="image/webp" />
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   </head>
   <body>
@@ -223,9 +215,11 @@ git commit -m "Add sticky section nav and page anchors"
 ### Task 3: Rebuild CSS visual system
 
 **Files:**
+
 - Modify: `assets/css/main.css` (full replace)
 
 **Interfaces:**
+
 - Consumes: classes/ids from Task 2 (`site-nav`, `nav-link`, `site-section`, `profile`, publication/logo classes)
 - Produces: cool gray-blue tokens; sticky nav; refined profile; section chrome; responsive rules; motion classes `.is-revealed` / `.reveal-ready`
 
@@ -283,9 +277,11 @@ git commit -m "Restyle site with cool gray-blue research look"
 ### Task 4: Scroll-spy and reveal JS
 
 **Files:**
+
 - Create: `assets/js/site.js`
 
 **Interfaces:**
+
 - Consumes: `#site-nav .nav-link`, `main .site-section[id]`
 - Produces: toggles `.is-active` on nav links; adds `.reveal-ready` then `.is-revealed` on sections
 
@@ -364,6 +360,7 @@ git commit -m "Add nav scroll-spy and section reveal"
 ### Task 5: Push and verify CI deploy
 
 **Files:**
+
 - None (git remote / Actions)
 
 - [ ] **Step 1: Ensure working tree clean and push `main`**
@@ -396,13 +393,13 @@ Then confirm deployed site HTML contains `site-nav`, `source-serif-4`, and secti
 
 ## Spec Coverage Check
 
-| Spec requirement | Task |
-|------------------|------|
-| Cool gray-blue atmosphere + tokens | Task 3 |
-| Display + body fonts self-hosted | Task 1, 3 |
-| Sticky top anchor nav | Task 2, 3, 4 |
-| Profile polish | Task 2, 3 |
-| Section hierarchy / lists / pubs | Task 2, 3 |
-| Motion x3 + reduced-motion | Task 3, 4 |
-| Keep YAML/content/SEO | Task 2 (no data edits) |
-| Push without local serve | Task 5 |
+| Spec requirement                   | Task                   |
+| ---------------------------------- | ---------------------- |
+| Cool gray-blue atmosphere + tokens | Task 3                 |
+| Display + body fonts self-hosted   | Task 1, 3              |
+| Sticky top anchor nav              | Task 2, 3, 4           |
+| Profile polish                     | Task 2, 3              |
+| Section hierarchy / lists / pubs   | Task 2, 3              |
+| Motion x3 + reduced-motion         | Task 3, 4              |
+| Keep YAML/content/SEO              | Task 2 (no data edits) |
+| Push without local serve           | Task 5                 |
