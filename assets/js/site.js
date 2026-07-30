@@ -20,10 +20,15 @@
     });
   }
 
-  if (!("IntersectionObserver" in window)) {
-    setActive(sections[0].id);
-    return;
+  function initialId() {
+    var hash = window.location.hash.slice(1);
+    if (hash && document.getElementById(hash)) return hash;
+    return sections[0].id;
   }
+
+  setActive(initialId());
+
+  if (!("IntersectionObserver" in window)) return;
 
   var spy = new IntersectionObserver(
     function (entries) {
@@ -36,7 +41,7 @@
         })[0];
       if (visible && visible.target.id) setActive(visible.target.id);
     },
-    { rootMargin: "-40% 0px -50% 0px", threshold: [0.1, 0.25, 0.5] }
+    { rootMargin: "-28% 0px -55% 0px", threshold: [0.08, 0.2, 0.35, 0.5] }
   );
   sections.forEach(function (section) {
     spy.observe(section);
