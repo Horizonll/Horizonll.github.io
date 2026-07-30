@@ -228,10 +228,11 @@ main {
   text-align: center;
 }
 
-.profile-info .name span {
+.profile-info .name .name-zh {
   color: var(--color-accent);
   font-family: "Noto Serif SC";
   font-weight: 300;
+  font-style: normal;
 }
 
 .profile-info .meta {

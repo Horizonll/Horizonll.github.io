@@ -17,7 +17,7 @@ image: /img/1.webp
     >
   </div>
   <div class="profile-info">
-    <h1 class="name">{{ site.author_profile.name }} <span lang="zh-cn">「{{ site.author_profile.alternate_name }}」</span></h1>
+    <h1 class="name">{{ site.author_profile.name }} <span class="name-zh">「{{ site.author_profile.alternate_name }}」</span></h1>
     <p class="meta">Undergraduate Student, {{ site.author_profile.affiliation }}</p>
     <div class="profile-links">
       <a href="mailto:{{ site.author_profile.email }}" title="Email {{ site.author_profile.email }}">
