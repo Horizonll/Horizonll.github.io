@@ -416,12 +416,6 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-.logo-list {
-  margin: 0.55em 0;
-  padding: 0;
-  list-style: none;
-}
-
 .logo-item {
   display: flex;
   align-items: center;

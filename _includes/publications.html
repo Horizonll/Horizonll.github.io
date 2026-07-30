@@ -14,8 +14,7 @@
           target="_blank"
           rel="noopener noreferrer"
           {% if link.bold %}class="is-bold"{% endif %}
-          >{{ link.text }}</a
-        >{% unless forloop.last %}<span class="pub-link-sep" aria-hidden="true">·</span>{% endunless %}
+        >{{ link.text }}</a>{% unless forloop.last %}<span class="pub-link-sep" aria-hidden="true">·</span>{% endunless %}
         {% endfor %}
       </p>
       {% endif %}

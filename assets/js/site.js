@@ -21,6 +21,11 @@
   var ticking = false;
   var unlockOnScroll = null;
   var unlockOnScrollEnd = null;
+  var settleDelay = reduceMotion ? 40 : 140;
+
+  function scrollY() {
+    return window.scrollY || window.pageYOffset;
+  }
 
   function setActive(id) {
     links.forEach(function (link) {
@@ -33,27 +38,22 @@
   }
 
   function activeFromScroll() {
-    var scrollY = window.scrollY || window.pageYOffset;
+    var y = scrollY();
     var doc = document.documentElement;
     var maxScroll = Math.max(0, doc.scrollHeight - window.innerHeight);
     var offset = navOffset();
-    var progress = maxScroll > 0 ? Math.min(1, Math.max(0, scrollY / maxScroll)) : 0;
+    var progress = maxScroll > 0 ? Math.min(1, Math.max(0, y / maxScroll)) : 0;
     // Move the probe down the viewport as we approach the page end so short
     // trailing sections can activate without inventing empty bottom space.
     var probe = Math.min(
       doc.scrollHeight - 1,
-      scrollY + offset + progress * Math.max(0, window.innerHeight - offset)
+      y + offset + progress * Math.max(0, window.innerHeight - offset)
     );
 
     var current = sections[0].id;
     for (var i = 0; i < sections.length; i++) {
-      var start = sections[i].offsetTop;
-      var end =
-        i + 1 < sections.length
-          ? sections[i + 1].offsetTop
-          : doc.scrollHeight;
-      if (probe >= start && probe < end) return sections[i].id;
-      if (start <= probe) current = sections[i].id;
+      if (sections[i].offsetTop <= probe) current = sections[i].id;
+      else break;
     }
     return current;
   }
@@ -63,7 +63,7 @@
       setActive(lockedId);
       return;
     }
-    var y = window.scrollY || window.pageYOffset;
+    var y = scrollY();
     if (stickyId && Math.abs(y - stickyY) < 8) {
       setActive(stickyId);
       return;
@@ -97,7 +97,7 @@
   function clearLock() {
     detachUnlockListeners();
     stickyId = lockedId;
-    stickyY = window.scrollY || window.pageYOffset;
+    stickyY = scrollY();
     lockedId = null;
     updateActive();
   }
@@ -109,21 +109,28 @@
     setActive(id);
 
     if ("onscrollend" in window) {
-      unlockOnScrollEnd = function () {
-        clearLock();
-      };
+      var startY = scrollY();
+      unlockOnScrollEnd = clearLock;
       window.addEventListener("scrollend", unlockOnScrollEnd, { once: true });
-      unlockTimer = window.setTimeout(clearLock, 1500);
+      // If navigation does not start a scroll (already at target), unlock soon.
+      // If it does, wait for scrollend; keep a longer safety net only then.
+      unlockTimer = window.setTimeout(function () {
+        if (Math.abs(scrollY() - startY) < 1) {
+          clearLock();
+          return;
+        }
+        unlockTimer = window.setTimeout(clearLock, 4000);
+      }, settleDelay);
       return;
     }
 
     unlockOnScroll = function () {
       window.clearTimeout(settleTimer);
-      settleTimer = window.setTimeout(clearLock, reduceMotion ? 40 : 140);
+      settleTimer = window.setTimeout(clearLock, settleDelay);
     };
     window.addEventListener("scroll", unlockOnScroll, { passive: true });
-    settleTimer = window.setTimeout(clearLock, reduceMotion ? 40 : 140);
-    unlockTimer = window.setTimeout(clearLock, 1500);
+    settleTimer = window.setTimeout(clearLock, settleDelay);
+    unlockTimer = window.setTimeout(clearLock, 4000);
   }
 
   function initialId() {
