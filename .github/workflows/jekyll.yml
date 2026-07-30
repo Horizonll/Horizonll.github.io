@@ -1,8 +1,8 @@
-name: Build and deploy Jekyll site
+name: Deploy
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -14,38 +14,27 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-env:
-  BUNDLE_JOBS: 4
-  BUNDLE_RETRY: 2
-  JEKYLL_ENV: production
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      JEKYLL_ENV: production
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-        with:
-          fetch-depth: 1
+      - uses: actions/checkout@v7
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl ""
+      - run: bundle exec jekyll build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+      - uses: actions/upload-pages-artifact@v5
         with:
-          path: ./_site
-          retention-days: 1
+          path: _site
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deploy
         uses: actions/deploy-pages@v5
