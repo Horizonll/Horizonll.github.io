@@ -208,7 +208,7 @@ body {
 main {
   width: min(var(--width-content), calc(100% - var(--space-page-x)));
   margin: 0 auto;
-  padding: 1.5rem 0 3rem;
+  padding: 1.5rem 0 45vh;
   overflow-wrap: break-word;
 }
 

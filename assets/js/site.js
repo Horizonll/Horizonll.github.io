@@ -13,6 +13,12 @@
   if (!sections.length) return;
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var lockedId = null;
+  var unlockTimer = 0;
+  var settleTimer = 0;
+  var ticking = false;
+  var unlockOnScroll = null;
+  var unlockOnScrollEnd = null;
 
   function setActive(id) {
     links.forEach(function (link) {
@@ -20,38 +26,101 @@
     });
   }
 
+  function navOffset() {
+    return nav.getBoundingClientRect().height + 14;
+  }
+
+  function activeFromScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    var offset = navOffset();
+    var current = sections[0].id;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].offsetTop - offset <= y + 1) {
+        current = sections[i].id;
+      }
+    }
+    return current;
+  }
+
+  function updateActive() {
+    if (lockedId) {
+      setActive(lockedId);
+      return;
+    }
+    setActive(activeFromScroll());
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      ticking = false;
+      updateActive();
+    });
+  }
+
+  function detachUnlockListeners() {
+    if (unlockOnScroll) {
+      window.removeEventListener("scroll", unlockOnScroll);
+      unlockOnScroll = null;
+    }
+    if (unlockOnScrollEnd) {
+      window.removeEventListener("scrollend", unlockOnScrollEnd);
+      unlockOnScrollEnd = null;
+    }
+    window.clearTimeout(unlockTimer);
+    window.clearTimeout(settleTimer);
+  }
+
+  function clearLock() {
+    detachUnlockListeners();
+    lockedId = null;
+    updateActive();
+  }
+
+  function lockActive(id) {
+    detachUnlockListeners();
+    lockedId = id;
+    setActive(id);
+
+    if ("onscrollend" in window) {
+      unlockOnScrollEnd = function () {
+        clearLock();
+      };
+      window.addEventListener("scrollend", unlockOnScrollEnd, { once: true });
+      unlockTimer = window.setTimeout(clearLock, 1500);
+      return;
+    }
+
+    unlockOnScroll = function () {
+      window.clearTimeout(settleTimer);
+      settleTimer = window.setTimeout(clearLock, reduceMotion ? 40 : 140);
+    };
+    window.addEventListener("scroll", unlockOnScroll, { passive: true });
+    settleTimer = window.setTimeout(clearLock, reduceMotion ? 40 : 140);
+    unlockTimer = window.setTimeout(clearLock, 1500);
+  }
+
   function initialId() {
     var hash = window.location.hash.slice(1);
     if (hash && document.getElementById(hash)) return hash;
-    return sections[0].id;
+    return activeFromScroll();
   }
 
   setActive(initialId());
 
-  if (!("IntersectionObserver" in window)) return;
-
-  var spy = new IntersectionObserver(
-    function (entries) {
-      var visible = entries
-        .filter(function (entry) {
-          return entry.isIntersecting;
-        })
-        .sort(function (a, b) {
-          return b.intersectionRatio - a.intersectionRatio;
-        })[0];
-      if (visible && visible.target.id) setActive(visible.target.id);
-    },
-    { rootMargin: "-28% 0px -55% 0px", threshold: [0.08, 0.2, 0.35, 0.5] }
-  );
-  sections.forEach(function (section) {
-    spy.observe(section);
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate);
+  window.addEventListener("hashchange", function () {
+    var hash = window.location.hash.slice(1);
+    if (hash && document.getElementById(hash)) {
+      lockActive(hash);
+    } else {
+      updateActive();
+    }
   });
 
-  if (reduceMotion) {
-    sections.forEach(function (section) {
-      section.classList.add("is-revealed");
-    });
-  } else {
+  if ("IntersectionObserver" in window && !reduceMotion) {
     var reveal = new IntersectionObserver(
       function (entries, observer) {
         entries.forEach(function (entry) {
@@ -66,12 +135,16 @@
       section.classList.add("reveal-ready");
       reveal.observe(section);
     });
+  } else {
+    sections.forEach(function (section) {
+      section.classList.add("is-revealed");
+    });
   }
 
   links.forEach(function (link) {
     link.addEventListener("click", function () {
       var id = link.hash.slice(1);
-      if (id) setActive(id);
+      if (id) lockActive(id);
     });
   });
 })();
