@@ -14,6 +14,8 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lockedId = null;
+  var stickyId = null;
+  var stickyY = 0;
   var unlockTimer = 0;
   var settleTimer = 0;
   var ticking = false;
@@ -31,13 +33,27 @@
   }
 
   function activeFromScroll() {
-    var y = window.scrollY || window.pageYOffset;
+    var scrollY = window.scrollY || window.pageYOffset;
+    var doc = document.documentElement;
+    var maxScroll = Math.max(0, doc.scrollHeight - window.innerHeight);
     var offset = navOffset();
+    var progress = maxScroll > 0 ? Math.min(1, Math.max(0, scrollY / maxScroll)) : 0;
+    // Move the probe down the viewport as we approach the page end so short
+    // trailing sections can activate without inventing empty bottom space.
+    var probe = Math.min(
+      doc.scrollHeight - 1,
+      scrollY + offset + progress * Math.max(0, window.innerHeight - offset)
+    );
+
     var current = sections[0].id;
     for (var i = 0; i < sections.length; i++) {
-      if (sections[i].offsetTop - offset <= y + 1) {
-        current = sections[i].id;
-      }
+      var start = sections[i].offsetTop;
+      var end =
+        i + 1 < sections.length
+          ? sections[i + 1].offsetTop
+          : doc.scrollHeight;
+      if (probe >= start && probe < end) return sections[i].id;
+      if (start <= probe) current = sections[i].id;
     }
     return current;
   }
@@ -47,6 +63,12 @@
       setActive(lockedId);
       return;
     }
+    var y = window.scrollY || window.pageYOffset;
+    if (stickyId && Math.abs(y - stickyY) < 8) {
+      setActive(stickyId);
+      return;
+    }
+    stickyId = null;
     setActive(activeFromScroll());
   }
 
@@ -74,12 +96,15 @@
 
   function clearLock() {
     detachUnlockListeners();
+    stickyId = lockedId;
+    stickyY = window.scrollY || window.pageYOffset;
     lockedId = null;
     updateActive();
   }
 
   function lockActive(id) {
     detachUnlockListeners();
+    stickyId = null;
     lockedId = id;
     setActive(id);
 
