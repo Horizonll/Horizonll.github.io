@@ -11,38 +11,18 @@
 }
 
 :root {
-  --font-size-body: 1rem;
-  --font-size-name: 2.25rem;
-  --font-size-profile-meta: 1rem;
-  --font-size-section-heading: 1.35rem;
-  --font-size-subsection-heading: 1.25rem;
-  --font-size-publication-detail: 0.9rem;
-
   --space-page-y-top: 1.25rem;
-  --space-page-y-bottom: 1.75rem;
   --space-page-x: 32px;
   --space-profile-gap: 1.5rem;
-  --space-profile-pad-y: 0.5rem;
-  --space-section-heading-top: 1.5em;
-  --space-section-heading-bottom: 0.45em;
-  --space-subsection-heading-top: 1em;
-  --space-subsection-heading-bottom: 0.35em;
   --space-pub-gap: 0.75rem;
-  --space-logo-gap: 0.5rem;
 
   --size-photo: 220px;
-  --size-logo: 60px;
   --size-pub-marker: 14px;
-  --size-content-max: 820px;
 
   --color-text: #000;
   --color-bg: #fff;
   --color-link: #1773cf;
   --color-link-hover: #ff7b15;
-  --color-muted: #4a4a4a;
-  --color-pub-marker: #fc9;
-  --color-pub-link: #808080;
-  --color-pub-link-sep: #999999;
 }
 
 *,
@@ -54,16 +34,16 @@
 body {
   margin: 0;
   font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-  font-size: var(--font-size-body);
+  font-size: 1rem;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.5;
 }
 
 main {
-  width: min(var(--size-content-max), calc(100% - var(--space-page-x)));
+  width: min(820px, calc(100% - var(--space-page-x)));
   margin: auto;
-  padding: var(--space-page-y-top) 0 var(--space-page-y-bottom);
+  padding: var(--space-page-y-top) 0 1.75rem;
   overflow-wrap: break-word;
 }
 
@@ -119,21 +99,18 @@ main {
   gap: var(--space-profile-gap);
   align-items: center;
   margin: 0 0 0.5rem;
-  padding: var(--space-profile-pad-y) 0;
+  padding: 0.5rem 0;
 }
 
 .profile-photo {
   flex: 0 0 var(--size-photo);
   width: var(--size-photo);
-  max-width: 100%;
 }
 
 .profile-photo img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -146,14 +123,13 @@ main {
 }
 
 .profile-info .name {
-  font-size: var(--font-size-name);
+  font-size: 2.25rem;
   font-weight: 400;
   margin: 0 0 0.6rem;
   line-height: 1.25;
 }
 
 .profile-info .meta {
-  font-size: var(--font-size-profile-meta);
   margin: 0.35rem 0 0.6rem;
   text-align: center;
 }
@@ -193,28 +169,20 @@ h3 {
 }
 
 h2 {
-  font-size: var(--font-size-section-heading);
-  margin: var(--space-section-heading-top) 0 var(--space-section-heading-bottom);
+  font-size: 1.35rem;
+  margin: 1.5em 0 0.45em;
   scroll-margin-top: 4rem;
 }
 
 h3 {
-  font-size: var(--font-size-subsection-heading);
-  margin: var(--space-subsection-heading-top) 0
-    var(--space-subsection-heading-bottom);
+  font-size: 1.25rem;
+  margin: 1em 0 0.35em;
 }
 
 ul,
 ol {
   list-style: none;
   margin: 0.5em 0;
-  margin-inline: 0;
-  padding: 0;
-  padding-inline-start: 0;
-}
-
-li {
-  margin: 0;
   padding: 0;
 }
 
@@ -243,12 +211,12 @@ a:focus-visible {
 .logo-item {
   display: flex;
   align-items: center;
-  gap: var(--space-logo-gap);
+  gap: 0.5rem;
 }
 
 .logo-icon {
   flex: 0 0 auto;
-  width: var(--size-logo);
+  width: 60px;
   object-fit: contain;
 }
 
@@ -260,7 +228,7 @@ a:focus-visible {
 
 .pub-marker {
   flex: 0 0 var(--size-pub-marker);
-  background: var(--color-pub-marker);
+  background: #fc9;
 }
 
 .pub-body {
@@ -272,25 +240,21 @@ a:focus-visible {
   margin: 0;
 }
 
-.pub-title {
-  font-size: var(--font-size-body);
-}
-
 .pub-authors,
 .pub-venue,
 .pub-links {
-  font-size: var(--font-size-publication-detail);
-  color: var(--color-muted);
+  font-size: 0.9rem;
+  color: #4a4a4a;
 }
 
-.pub-links {
+.pub-body .pub-links {
   margin-top: 0.25rem;
 }
 
 .pub-links a,
 .pub-links a:visited,
 .pub-links a:active {
-  color: var(--color-pub-link);
+  color: #808080;
 }
 
 .pub-links a:hover,
@@ -303,7 +267,7 @@ a:focus-visible {
 }
 
 .pub-link-sep {
-  color: var(--color-pub-link-sep);
+  color: #999;
   margin: 0 6px;
 }
 
@@ -335,9 +299,7 @@ a:focus-visible {
     overflow: visible;
   }
 
-  .page-nav a,
-  .page-nav a:visited,
-  .page-nav a:active {
+  .page-nav a {
     display: flex;
     min-height: 36px;
     align-items: center;
@@ -379,10 +341,5 @@ a:focus-visible {
     --space-page-x: 24px;
     --space-pub-gap: 0.625rem;
     --size-pub-marker: 10px;
-    --size-photo: 116px;
-  }
-
-  main {
-    width: calc(100% - var(--space-page-x));
   }
 }
