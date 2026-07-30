@@ -446,14 +446,17 @@ a:focus-visible {
 }
 
 .logo-body {
-  display: flex;
   flex: 1;
-  flex-direction: column;
-  gap: 0.12rem;
   min-width: 0;
 }
 
+.logo-period,
+.logo-text {
+  display: block;
+}
+
 .logo-period {
+  margin-bottom: 0.15rem;
   color: var(--color-muted);
   font-size: 0.93rem;
   line-height: 1.35;
