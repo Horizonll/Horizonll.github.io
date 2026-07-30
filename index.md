@@ -8,10 +8,10 @@ image: /img/1.webp
   <a href="#education">Education</a>
   <a href="#publications">Publications</a>
   <a href="#internships">Internships</a>
-  <a href="#honors">Awards and Honors</a>
+  <a href="#honors">Awards</a>
   <a href="#talks">Talks</a>
   <a href="#teaching">Teaching</a>
-  <a href="#service">Professional Service</a>
+  <a href="#service">Service</a>
 </nav>
 
 <div class="profile">

@@ -83,12 +83,16 @@ main {
 }
 
 .page-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   display: flex;
   justify-content: center;
   gap: 1.25rem;
   margin: 0 0 1rem;
-  padding: 0.35rem 0 0.65rem;
+  padding: 0.55rem 0;
   border-bottom: 1px solid #e5e5e5;
+  background: var(--color-bg);
   font-size: 0.95rem;
   overflow-x: auto;
   scrollbar-width: none;
@@ -98,14 +102,16 @@ main {
   display: none;
 }
 
-.page-nav a {
-  color: var(--color-muted);
+.page-nav a,
+.page-nav a:visited,
+.page-nav a:active {
+  color: var(--color-text);
   white-space: nowrap;
 }
 
 .page-nav a:hover,
 .page-nav a:focus-visible {
-  color: var(--color-link-hover);
+  color: var(--color-link);
 }
 
 .profile {
@@ -189,7 +195,7 @@ h3 {
 h2 {
   font-size: var(--font-size-section-heading);
   margin: var(--space-section-heading-top) 0 var(--space-section-heading-bottom);
-  scroll-margin-top: 1rem;
+  scroll-margin-top: 4rem;
 }
 
 h3 {
@@ -321,8 +327,27 @@ a:focus-visible {
   }
 
   .page-nav {
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
     margin-bottom: 0.75rem;
+    padding: 0.25rem 0;
+    overflow: visible;
+  }
+
+  .page-nav a,
+  .page-nav a:visited,
+  .page-nav a:active {
+    display: flex;
+    min-height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.15rem;
+    text-align: center;
+  }
+
+  h2 {
+    scroll-margin-top: 6rem;
   }
 
   .profile {
