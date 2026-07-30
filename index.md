@@ -37,21 +37,18 @@ image: /img/1.webp
 </div>
 
 I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn){:target="_blank" rel="noopener noreferrer"}. I have conducted research on foundation model architecture at [LEAP Lab](https://www.leaplab.ai){:target="_blank" rel="noopener noreferrer"}. I also served as the Decision Team Leader of the THMOS humanoid robotics team. My research interests include foundation model architecture and Test-Time Training.
-
 </section>
 
 <section id="news" class="site-section" markdown="1">
 ## News
 
 {% include news.html %}
-
 </section>
 
 <section id="education" class="site-section" markdown="1">
 ## Education
 
 {% include logo-list.html items=site.data.educations %}
-
 </section>
 
 <section id="publications" class="site-section" markdown="1">
@@ -60,14 +57,12 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 [Google Scholar]({{ site.author_profile.scholar }}){:target="_blank" rel="noopener noreferrer"}
 
 {% include publications.html %}
-
 </section>
 
 <section id="internships" class="site-section" markdown="1">
 ## Internships
 
 {% include logo-list.html items=site.data.internships %}
-
 </section>
 
 <section id="awards" class="site-section" markdown="1">
