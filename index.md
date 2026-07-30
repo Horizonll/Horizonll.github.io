@@ -42,10 +42,7 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 <section id="news" class="site-section" markdown="1">
 ## News
 
-- <span class="news-date">[07/2025]</span> 🎉 THMOS won 2nd place in KidSize and 4th place in AdultSize in the Humanoid Soccer League at RoboCup 2025!
-- <span class="news-date">[05/2025]</span> 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2025!
-- <span class="news-date">[07/2024]</span> 🎉 THMOS placed in the Top 8 in KidSize and 5th in AdultSize in the Humanoid Soccer League at RoboCup 2024!
-- <span class="news-date">[06/2024]</span> 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2024!
+{% include news.html %}
 </section>
 
 <section id="education" class="site-section" markdown="1">

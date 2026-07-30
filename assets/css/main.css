@@ -348,7 +348,7 @@ ol {
 #talks ul > li,
 #teaching ul > li,
 #service ul > li,
-#news ul > li {
+.news-list > li {
   position: relative;
   padding: 0.45rem 0 0.45rem 1rem;
   border-bottom: 1px solid rgba(31, 78, 121, 0.08);
@@ -360,7 +360,7 @@ ol {
 #talks ul > li:last-child,
 #teaching ul > li:last-child,
 #service ul > li:last-child,
-#news ul > li:last-child {
+.news-list > li:last-child {
   border-bottom: 0;
 }
 
@@ -369,7 +369,7 @@ ol {
 #talks ul > li::before,
 #teaching ul > li::before,
 #service ul > li::before,
-#news ul > li::before {
+.news-list > li::before {
   content: "";
   position: absolute;
   left: 0;
