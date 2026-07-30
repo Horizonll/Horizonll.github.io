@@ -51,9 +51,8 @@
   --color-border: rgba(31, 78, 121, 0.14);
   --color-rule: rgba(31, 78, 121, 0.08);
   --color-photo-border: rgba(31, 78, 121, 0.18);
-  --font-cjk: "Noto Sans SC", sans-serif;
-  --font-body: "Titillium Web", var(--font-cjk);
-  --font-display: "Source Serif 4", var(--font-cjk);
+  --font-body: "Titillium Web", "Noto Sans SC", sans-serif;
+  --font-display: "Source Serif 4", "Noto Sans SC", sans-serif;
   --width-content: 880px;
   --nav-height: 56px;
   --space-page-x: 32px;
@@ -278,6 +277,8 @@ main {
 
 .profile-info .name span {
   color: var(--color-accent);
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 600;
 }
 
 .profile-info .meta {
