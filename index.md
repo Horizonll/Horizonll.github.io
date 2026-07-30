@@ -3,7 +3,7 @@ layout: default
 image: /img/1.webp
 ---
 
-<section id="about" class="site-section is-about" markdown="1">
+<section id="about" class="site-section" markdown="1">
 <div class="profile">
   <div class="profile-photo">
     <img
