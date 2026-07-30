@@ -350,10 +350,11 @@ a:focus-visible {
   .nav-disclosure[open] .mobile-nav-links {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: auto;
     right: 0;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    width: min(220px, 100%);
     gap: 0;
     padding: 0.4rem;
     border-bottom: 1px solid #e5e5e5;
@@ -365,9 +366,9 @@ a:focus-visible {
     display: flex;
     min-height: 40px;
     align-items: center;
-    justify-content: center;
-    padding: 0.35rem;
-    text-align: center;
+    justify-content: flex-end;
+    padding: 0.35rem 0.6rem;
+    text-align: right;
   }
 
   h2 {
