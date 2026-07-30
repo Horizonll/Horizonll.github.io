@@ -3,17 +3,6 @@ layout: default
 image: /img/1.webp
 ---
 
-<nav class="page-nav" aria-label="Page sections">
-  <div class="nav-links">
-    {% include navigation-links.html %}
-  </div>
-  <select class="mobile-nav" aria-label="Page section" onchange="location.hash = this.value">
-    {% for item in site.data.navigation %}
-      <option value="{{ item.id }}">{{ item.label }}</option>
-    {% endfor %}
-  </select>
-</nav>
-
 <div class="profile">
   <div class="profile-photo">
     <img
@@ -48,28 +37,28 @@ image: /img/1.webp
 
 I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn){:target="_blank" rel="noopener noreferrer"}. I have conducted research on foundation model architecture at [LEAP Lab](https://www.leaplab.ai){:target="_blank" rel="noopener noreferrer"}. I also served as the Decision Team Leader of the THMOS humanoid robotics team. My research interests include foundation model architecture and Test-Time Training.
 
-## News {#news}
+## News
 
 - [07/2025] 🎉 THMOS won 2nd place in KidSize and 4th place in AdultSize in the Humanoid Soccer League at RoboCup 2025!
 - [05/2025] 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2025!
 - [07/2024] 🎉 THMOS placed in the Top 8 in KidSize and 5th in AdultSize in the Humanoid Soccer League at RoboCup 2024!
 - [06/2024] 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2024!
 
-## Education {#education}
+## Education
 
 {% include logo-list.html items=site.data.educations %}
 
-## Publications {#publications}
+## Publications
 
 [Google Scholar]({{ site.author_profile.scholar }}){:target="_blank" rel="noopener noreferrer"}
 
 {% include publications.html %}
 
-## Internships {#internships}
+## Internships
 
 {% include logo-list.html items=site.data.internships %}
 
-## Awards and Honors {#honors}
+## Awards and Honors
 
 ### 2025
 
@@ -92,19 +81,19 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 - Hardware Design Competition — 3rd Prize
 - Chen Xiaoyue Scholarship
 
-## Talks {#talks}
+## Talks
 
 - "Perception and Decision-Making in Humanoid Soccer Robots", Spark Day, 2025
 - "Text-Guided Visual Understanding in Multimodal Large Models", 2025
 
-## Teaching {#teaching}
+## Teaching
 
 - Humanoid Soccer Robot, Teaching Assistant, Fall 2025
 - Intelligent Car, Teaching Assistant, Spring 2025
 - Humanoid Soccer Robot, Teaching Assistant, Fall 2024
 - Exploration of Scientific Research in the Lab, Teaching Assistant, Fall 2024
 
-## Professional Service {#service}
+## Professional Service
 
 - Decision Team Leader, THMOS
 - Referee, The World Humanoid Robot Games
