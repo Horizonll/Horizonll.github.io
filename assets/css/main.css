@@ -156,21 +156,14 @@ body {
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.15rem 0.85rem;
-  min-width: 0;
   padding: 0.65rem 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.nav-links::-webkit-scrollbar {
-  display: none;
 }
 
 .nav-link {
   position: relative;
-  flex: 0 0 auto;
   padding: 0.2rem 0;
   color: var(--color-muted);
   font-size: 0.92rem;
@@ -270,7 +263,7 @@ main {
   margin: 0 0 0.55rem;
   color: var(--color-text);
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 2.55rem);
+  font-size: 2.55rem;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
@@ -511,67 +504,6 @@ a:focus-visible {
 .pub-link-sep {
   margin: 0 6px;
   color: #9aa8b7;
-}
-
-@media (max-width: 960px) {
-  :root {
-    --size-photo: 180px;
-  }
-
-  .nav-brand {
-    display: none;
-  }
-}
-
-@media (max-width: 640px) {
-  :root {
-    --size-photo: 132px;
-    --space-profile-gap: 0.85rem;
-    --nav-height: 50px;
-    --space-page-x: 20px;
-  }
-
-  .site-nav-inner {
-    gap: 0;
-  }
-
-  main {
-    padding-top: 1rem;
-  }
-
-  .profile {
-    flex-direction: column;
-    padding-top: 0.15rem;
-  }
-
-  .profile-photo {
-    flex: 0 0 auto;
-  }
-
-  .profile-info .name {
-    margin-bottom: 0.35rem;
-    font-size: 1.85rem;
-  }
-
-  .profile-info .meta {
-    margin: 0.15rem 0 0.55rem;
-    line-height: 1.4;
-  }
-
-  .profile-links {
-    gap: 0.85rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --space-page-x: 18px;
-    --space-pub-gap: 0.65rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
