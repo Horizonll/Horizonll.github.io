@@ -196,6 +196,10 @@ main {
   padding: 0.35rem 0 0.15rem;
 }
 
+.site-section.is-about {
+  padding-top: 0.15rem;
+}
+
 .site-section.reveal-ready {
   opacity: 0;
   transform: translateY(12px);
