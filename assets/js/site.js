@@ -28,7 +28,7 @@
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (visible?.target.id) setActive(visible.target.id);
     },
-    { rootMargin: "-40% 0px -50% 0px", threshold: [0.1, 0.25, 0.5] }
+    { rootMargin: "-40% 0px -50% 0px", threshold: [0.1, 0.25, 0.5] },
   );
   sections.forEach((section) => spy.observe(section));
 
@@ -43,7 +43,7 @@
           observer.unobserve(entry.target);
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
     );
     sections.forEach((section) => {
       section.classList.add("reveal-ready");
