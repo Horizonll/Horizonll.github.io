@@ -66,19 +66,26 @@ main {
   position: sticky;
   top: 0;
   z-index: 50;
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
   margin: 0 0 1rem;
-  padding: 0.55rem 0;
   border-bottom: 1px solid #e5e5e5;
   background: var(--color-bg);
   font-size: 0.95rem;
+}
+
+.nav-disclosure summary {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0.55rem 0;
   overflow-x: auto;
   scrollbar-width: none;
 }
 
-.page-nav::-webkit-scrollbar {
+.nav-links::-webkit-scrollbar {
   display: none;
 }
 
@@ -278,7 +285,7 @@ a:focus-visible {
 }
 
 @media (max-width: 840px) {
-  .page-nav {
+  .nav-links {
     justify-content: flex-start;
   }
 }
@@ -291,25 +298,72 @@ a:focus-visible {
   }
 
   .page-nav {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0;
     margin-bottom: 0.75rem;
-    padding: 0.25rem 0;
-    overflow: visible;
   }
 
-  .page-nav a {
+  .nav-disclosure summary {
     display: flex;
-    min-height: 36px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem 0.15rem;
+    color: var(--color-text);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .nav-disclosure summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .nav-disclosure summary svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  .close-icon,
+  .nav-links {
+    display: none;
+  }
+
+  .nav-disclosure[open] .menu-icon {
+    display: none;
+  }
+
+  .nav-disclosure[open] .close-icon {
+    display: block;
+  }
+
+  .nav-disclosure[open] .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    padding: 0.4rem;
+    border-bottom: 1px solid #e5e5e5;
+    background: var(--color-bg);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 8%);
+  }
+
+  .nav-links a {
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem;
     text-align: center;
   }
 
   h2 {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 4rem;
   }
 
   .profile {
