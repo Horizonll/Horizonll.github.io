@@ -65,6 +65,29 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 {% include logo-list.html items=site.data.internships %}
 </section>
 
+<section id="talks" class="site-section" markdown="1">
+## Talks
+
+- "Perception and Decision-Making in Humanoid Soccer Robots", Spark Day, 2025
+- "Text-Guided Visual Understanding in Multimodal Large Models", 2025
+</section>
+
+<section id="teaching" class="site-section" markdown="1">
+## Teaching
+
+- Humanoid Soccer Robot, Teaching Assistant, Fall 2025
+- Intelligent Car, Teaching Assistant, Spring 2025
+- Humanoid Soccer Robot, Teaching Assistant, Fall 2024
+- Exploration of Scientific Research in the Lab, Teaching Assistant, Fall 2024
+</section>
+
+<section id="service" class="site-section" markdown="1">
+## Professional Service
+
+- Decision Team Leader, THMOS
+- Referee, The World Humanoid Robot Games
+</section>
+
 <section id="awards" class="site-section" markdown="1">
 ## Awards and Honors
 
@@ -88,27 +111,4 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 - Hardware Design Competition, People's Livelihood Track — 1st Prize
 - Hardware Design Competition — 3rd Prize
 - Chen Xiaoyue Scholarship
-</section>
-
-<section id="talks" class="site-section" markdown="1">
-## Talks
-
-- "Perception and Decision-Making in Humanoid Soccer Robots", Spark Day, 2025
-- "Text-Guided Visual Understanding in Multimodal Large Models", 2025
-</section>
-
-<section id="teaching" class="site-section" markdown="1">
-## Teaching
-
-- Humanoid Soccer Robot, Teaching Assistant, Fall 2025
-- Intelligent Car, Teaching Assistant, Spring 2025
-- Humanoid Soccer Robot, Teaching Assistant, Fall 2024
-- Exploration of Scientific Research in the Lab, Teaching Assistant, Fall 2024
-</section>
-
-<section id="service" class="site-section" markdown="1">
-## Professional Service
-
-- Decision Team Leader, THMOS
-- Referee, The World Humanoid Robot Games
 </section>
