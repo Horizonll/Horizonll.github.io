@@ -3,6 +3,17 @@ layout: default
 image: /img/1.webp
 ---
 
+<nav class="page-nav" aria-label="Page sections">
+  <a href="#news">News</a>
+  <a href="#education">Education</a>
+  <a href="#publications">Publications</a>
+  <a href="#internships">Internships</a>
+  <a href="#honors">Awards and Honors</a>
+  <a href="#talks">Talks</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#service">Professional Service</a>
+</nav>
+
 <div class="profile">
   <div class="profile-photo">
     <img
@@ -16,38 +27,49 @@ image: /img/1.webp
     >
   </div>
   <div class="profile-info">
-    <h1 class="name">{{ site.author_profile.name }} <span lang="zh-cn">{{ site.author_profile.alternate_name }}</span></h1>
+    <h1 class="name">{{ site.author_profile.name }} <span lang="zh-cn">「{{ site.author_profile.alternate_name }}」</span></h1>
     <p class="meta">Undergraduate Student, {{ site.author_profile.affiliation }}</p>
-    <p class="meta"><a href="mailto:{{ site.author_profile.email }}">{{ site.author_profile.email }}</a></p>
-    <p class="meta">GitHub: <a href="https://github.com/{{ site.author_profile.github }}" target="_blank" rel="noopener noreferrer">{{ site.author_profile.github }}</a></p>
-    <p class="meta"><a href="{{ site.author_profile.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+    <div class="profile-links" aria-label="Contact and academic profiles">
+      <a href="mailto:{{ site.author_profile.email }}" title="Email {{ site.author_profile.email }}">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+        <span>Email</span>
+      </a>
+      <a href="https://github.com/{{ site.author_profile.github }}" target="_blank" rel="noopener noreferrer" title="GitHub profile">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.3 4 5 5 0 0 0 19.2.5S18 0 15 2a13.4 13.4 0 0 0-7 0C5 .1 3.8.5 3.8.5A5 5 0 0 0 3.7 4a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M8 19c-3 .9-3-1.5-4-2"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="{{ site.author_profile.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar profile">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <span>Scholar</span>
+      </a>
+    </div>
   </div>
 </div>
 
 I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn){:target="_blank" rel="noopener noreferrer"}. I have conducted research on foundation model architecture at [LEAP Lab](https://www.leaplab.ai){:target="_blank" rel="noopener noreferrer"}. I also served as the Decision Team Leader of the THMOS humanoid robotics team. My research interests include foundation model architecture and Test-Time Training.
 
-## News
+## News {#news}
 
 - [07/2025] 🎉 THMOS won 2nd place in KidSize and 4th place in AdultSize in the Humanoid Soccer League at RoboCup 2025!
 - [05/2025] 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2025!
 - [07/2024] 🎉 THMOS placed in the Top 8 in KidSize and 5th in AdultSize in the Humanoid Soccer League at RoboCup 2024!
 - [06/2024] 🎉 THMOS won 1st place in the Humanoid Soccer League at RoboCup China Open 2024!
 
-## Publications
+## Education {#education}
+
+{% include logo-list.html items=site.data.educations %}
+
+## Publications {#publications}
 
 [Google Scholar]({{ site.author_profile.scholar }}){:target="_blank" rel="noopener noreferrer"}
 
 {% include publications.html %}
 
-## Education
-
-{% include logo-list.html items=site.data.educations %}
-
-## Internships
+## Internships {#internships}
 
 {% include logo-list.html items=site.data.internships %}
 
-## Awards and Honors
+## Awards and Honors {#honors}
 
 ### 2025
 
@@ -70,19 +92,19 @@ I am an undergraduate student at [Tsinghua University](https://www.tsinghua.edu.
 - Hardware Design Competition — 3rd Prize
 - Chen Xiaoyue Scholarship
 
-## Talks
+## Talks {#talks}
 
 - "Perception and Decision-Making in Humanoid Soccer Robots", Spark Day, 2025
 - "Text-Guided Visual Understanding in Multimodal Large Models", 2025
 
-## Teaching
+## Teaching {#teaching}
 
 - Humanoid Soccer Robot, Teaching Assistant, Fall 2025
 - Intelligent Car, Teaching Assistant, Spring 2025
 - Humanoid Soccer Robot, Teaching Assistant, Fall 2024
 - Exploration of Scientific Research in the Lab, Teaching Assistant, Fall 2024
 
-## Professional Service
+## Professional Service {#service}
 
 - Decision Team Leader, THMOS
 - Referee, The World Humanoid Robot Games
