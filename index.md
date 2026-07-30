@@ -4,6 +4,7 @@ image: /img/1.webp
 ---
 
 <nav class="page-nav" aria-label="Page sections">
+  <a href="#main">Homepage</a>
   <a href="#news">News</a>
   <a href="#education">Education</a>
   <a href="#publications">Publications</a>
