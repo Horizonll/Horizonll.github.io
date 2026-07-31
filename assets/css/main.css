@@ -218,6 +218,11 @@ main {
   scroll-margin-top: calc(var(--nav-height) + 14px);
 }
 
+/* First section: land at scrollY=0 so About doesn't leave a sliver above. */
+#about.site-section {
+  scroll-margin-top: 100%;
+}
+
 .site-section.reveal-ready {
   opacity: 0;
   transform: translateY(12px);
