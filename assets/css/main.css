@@ -218,11 +218,6 @@ main {
   scroll-margin-top: calc(var(--nav-height) + 14px);
 }
 
-/* First section: oversized margin clamps native #about jumps to scrollY=0. */
-#about.site-section {
-  scroll-margin-top: 100vh;
-}
-
 .site-section.reveal-ready {
   opacity: 0;
   transform: translateY(12px);

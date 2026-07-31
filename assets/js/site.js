@@ -18,8 +18,6 @@
     nav.querySelectorAll('a[href="#' + topId + '"]')
   );
   var lockedId = null;
-  var stickyId = null;
-  var stickyY = 0;
   var unlockTimer = 0;
   var settleTimer = 0;
   var ticking = false;
@@ -54,8 +52,7 @@
     var maxScroll = Math.max(0, doc.scrollHeight - window.innerHeight);
     var offset = navOffset();
     var progress = maxScroll > 0 ? Math.min(1, Math.max(0, y / maxScroll)) : 0;
-    // Move the probe down the viewport as we approach the page end so short
-    // trailing sections can activate without inventing empty bottom space.
+    // Probe moves down the viewport near page end so short trailing sections activate.
     var probe = Math.min(
       doc.scrollHeight - 1,
       y + offset + progress * Math.max(0, window.innerHeight - offset)
@@ -74,12 +71,6 @@
       setActive(lockedId);
       return;
     }
-    var y = scrollY();
-    if (stickyId && Math.abs(y - stickyY) < 8) {
-      setActive(stickyId);
-      return;
-    }
-    stickyId = null;
     setActive(activeFromScroll());
   }
 
@@ -107,15 +98,12 @@
 
   function clearLock() {
     detachUnlockListeners();
-    stickyId = lockedId;
-    stickyY = scrollY();
     lockedId = null;
     updateActive();
   }
 
   function lockActive(id) {
     detachUnlockListeners();
-    stickyId = null;
     lockedId = id;
     setActive(id);
 
@@ -123,8 +111,6 @@
       var startY = scrollY();
       unlockOnScrollEnd = clearLock;
       window.addEventListener("scrollend", unlockOnScrollEnd, { once: true });
-      // If navigation does not start a scroll (already at target), unlock soon.
-      // If it does, wait for scrollend; keep a longer safety net only then.
       unlockTimer = window.setTimeout(function () {
         if (Math.abs(scrollY() - startY) < 1) {
           clearLock();
@@ -144,16 +130,21 @@
     unlockTimer = window.setTimeout(clearLock, 4000);
   }
 
-  function goToTop(event) {
-    event.preventDefault();
-    lockActive(topId);
+  function syncHash(id) {
+    var hash = "#" + id;
     if (window.history && window.history.pushState) {
-      if (window.location.hash !== "#" + topId) {
-        window.history.pushState(null, "", "#" + topId);
+      if (window.location.hash !== hash) {
+        window.history.pushState(null, "", hash);
       }
-    } else if (window.location.hash !== "#" + topId) {
-      window.location.hash = topId;
+    } else if (window.location.hash !== hash) {
+      window.location.hash = id;
     }
+  }
+
+  function goToTop(event) {
+    if (event && event.preventDefault) event.preventDefault();
+    lockActive(topId);
+    syncHash(topId);
     scrollToTop();
   }
 
@@ -211,7 +202,6 @@
   });
 
   topLinks.forEach(function (link) {
-    // Brand (and any duplicate top anchors) always force the true page top.
     if (links.indexOf(link) !== -1) return;
     link.addEventListener("click", goToTop);
   });
