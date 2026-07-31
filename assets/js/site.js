@@ -13,6 +13,10 @@
   if (!sections.length) return;
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var topId = sections[0].id;
+  var topLinks = Array.prototype.slice.call(
+    nav.querySelectorAll('a[href="#' + topId + '"]')
+  );
   var lockedId = null;
   var stickyId = null;
   var stickyY = 0;
@@ -25,6 +29,13 @@
 
   function scrollY() {
     return window.scrollY || window.pageYOffset;
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: reduceMotion ? "auto" : "smooth",
+    });
   }
 
   function setActive(id) {
@@ -133,6 +144,19 @@
     unlockTimer = window.setTimeout(clearLock, 4000);
   }
 
+  function goToTop(event) {
+    event.preventDefault();
+    lockActive(topId);
+    if (window.history && window.history.pushState) {
+      if (window.location.hash !== "#" + topId) {
+        window.history.pushState(null, "", "#" + topId);
+      }
+    } else if (window.location.hash !== "#" + topId) {
+      window.location.hash = topId;
+    }
+    scrollToTop();
+  }
+
   function initialId() {
     var hash = window.location.hash.slice(1);
     if (hash && document.getElementById(hash)) return hash;
@@ -147,6 +171,7 @@
     var hash = window.location.hash.slice(1);
     if (hash && document.getElementById(hash)) {
       lockActive(hash);
+      if (hash === topId) scrollToTop();
     } else {
       updateActive();
     }
@@ -174,9 +199,24 @@
   }
 
   links.forEach(function (link) {
-    link.addEventListener("click", function () {
+    link.addEventListener("click", function (event) {
       var id = link.hash.slice(1);
-      if (id) lockActive(id);
+      if (!id) return;
+      if (id === topId) {
+        goToTop(event);
+        return;
+      }
+      lockActive(id);
     });
   });
+
+  topLinks.forEach(function (link) {
+    // Brand (and any duplicate top anchors) always force the true page top.
+    if (links.indexOf(link) !== -1) return;
+    link.addEventListener("click", goToTop);
+  });
+
+  if (window.location.hash.slice(1) === topId) {
+    window.scrollTo(0, 0);
+  }
 })();

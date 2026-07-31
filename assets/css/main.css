@@ -218,9 +218,9 @@ main {
   scroll-margin-top: calc(var(--nav-height) + 14px);
 }
 
-/* First section: land at scrollY=0 so About doesn't leave a sliver above. */
+/* First section: oversized margin clamps native #about jumps to scrollY=0. */
 #about.site-section {
-  scroll-margin-top: 100%;
+  scroll-margin-top: 100vh;
 }
 
 .site-section.reveal-ready {
