@@ -1,0 +1,15 @@
+- title: Linear-Time Global Visual Modeling without Explicit Attention
+  authors:
+    - name: Ruize He
+      note: "*"
+      self: true
+    - name: Dongchen Han
+      note: "*"
+    - name: Gao Huang
+  venue: arXiv preprint, 2026
+  links:
+    - text: arXiv
+      url: https://arxiv.org/abs/2605.01711
+    - text: code
+      url: https://github.com/LeapLabTHU/WeightFormer
+      bold: true

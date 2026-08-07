@@ -1,0 +1,24 @@
+<ul>
+  {% for item in include.items %}
+  <li class="logo-item">
+    {% if item.icon %}
+    <div class="logo-icon-wrap">
+      <img
+        class="logo-icon"
+        src="{{ item.icon | relative_url }}"
+        width="48"
+        height="48"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    {% endif %}
+    <div class="logo-body">
+      <span class="logo-period">{{ item.period }}</span>
+      <span class="logo-text">{{ item.text }}</span>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
