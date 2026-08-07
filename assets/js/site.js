@@ -116,11 +116,6 @@
     ) {
       return hash;
     }
-    // Sections use content-visibility:auto, so offsetTop can report the
-    // contain-intrinsic-size placeholder instead of real layout. When the
-    // observer is available it corrects the guess on its first callback.
-    if ("IntersectionObserver" in window) return sections[0].id;
-
     const limit = nav.offsetHeight + 14;
     let current = sections[0].id;
     for (let i = 0; i < sections.length; i++) {

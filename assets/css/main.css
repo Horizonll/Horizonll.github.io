@@ -301,13 +301,6 @@ main {
   margin: 0 0 0.5rem;
   padding: 0.45rem 0 0.2rem;
   scroll-margin-top: calc(var(--nav-height) + 14px);
-  content-visibility: auto;
-  contain-intrinsic-size: auto 600px;
-}
-
-/* First section is always above the fold: render it eagerly. */
-.site-section:first-of-type {
-  content-visibility: visible;
 }
 
 /* Top section must land at true page top on hash/refresh. */
