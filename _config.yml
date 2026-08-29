@@ -1,0 +1,25 @@
+title: Ruize He
+description: >-
+  Personal academic homepage of Ruize He (何睿泽), undergraduate at Tsinghua
+  University, researching foundation model architecture and Test-Time Training.
+url: https://ruizehe.com
+logo: /img/1.webp
+scholar: https://scholar.google.com/citations?user=UJ0xmGwAAAAJ
+
+webmaster_verifications:
+  google: Vb_gBE_Kh285GnjqRPHPTE3WyhSCF6nelanm3s8Rliw
+  baidu: codeva-AU3L7jKxpO
+
+social:
+  links:
+    - https://github.com/Horizonll
+    - https://scholar.google.com/citations?user=UJ0xmGwAAAAJ
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

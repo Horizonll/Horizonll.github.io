@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base target="_blank" />
+    {% seo %}
+    <link
+      rel="icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <style>
+      {% include main.css %}
+    </style>
+  </head>
+  <body>
+    <main>{{ content }}</main>
+    <footer>
+      <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
+    </footer>
+  </body>
+</html>
