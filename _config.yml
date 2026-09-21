@@ -1,0 +1,20 @@
+title: Ruize He
+tagline: Foundation Models · Robotics
+description: Academic homepage of Ruize He (何睿泽), Tsinghua University.
+url: https://ruizehe.com
+lang: en
+logo: /img/1.webp
+scholar: https://scholar.google.com/citations?user=UJ0xmGwAAAAJ
+
+webmaster_verifications:
+  google: Vb_gBE_Kh285GnjqRPHPTE3WyhSCF6nelanm3s8Rliw
+  baidu: codeva-AU3L7jKxpO
+
+social:
+  links:
+    - https://github.com/Horizonll
+    - https://scholar.google.com/citations?user=UJ0xmGwAAAAJ
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
